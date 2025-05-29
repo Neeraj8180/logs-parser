@@ -55,7 +55,7 @@ def save_output(output_data: dict, original_filename: str, log_type: str):
 def main():
     user_input = input("Enter a file or folder path: ").strip()
     log_type = input(
-        "Enter the log file type (nginx, FIO, Netperf, Redis, MySQL_TPC_C, MySQL_TPC_H, Stream, DGEMM, Iperf, Mariadb_TPC_C, Mariadb_TPC_H, Oracle_TPC_C, Oracle_TPC_H, TCP_RR): "
+        "Enter the log file type (nginx, FIO, Netperf, Redis, MySQL_TPC_C, MySQL_TPC_H, Stream, DGEMM, Iperf, Mariadb_TPC_C, Mariadb_TPC_H, Oracle_TPC_C, Oracle_TPC_H, TCP_RR, FFMPEG): "
     ).strip()
 
     if log_type not in SCHEMA_MAP:
