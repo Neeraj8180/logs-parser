@@ -1,0 +1,32 @@
+Running 2m test @ http://localhost:8080/8080.bin
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.92ms    2.39ms  53.11ms   88.71%
+    Req/Sec    21.61k     9.32k   41.53k    56.87%
+  23171035 requests in 1.50m, 27.06GB read
+Requests/sec: 257184.98
+Transfer/sec:    307.57MB
+Running 2m test @ http://localhost:8081/8081.bin
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.85ms    2.23ms  41.73ms   88.55%
+    Req/Sec    21.66k     9.69k   42.05k    60.02%
+  23226873 requests in 1.50m, 27.13GB read
+Requests/sec: 257807.17
+Transfer/sec:    308.31MB
+Running 2m test @ http://localhost:8082/8082.bin
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.89ms    2.51ms  45.76ms   90.55%
+    Req/Sec    21.83k     8.57k   44.33k    62.09%
+  23406176 requests in 1.50m, 27.34GB read
+Requests/sec: 259825.69
+Transfer/sec:    310.73MB
+Running 2m test @ http://localhost:8083/8083.bin
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.80ms    2.05ms  37.71ms   88.21%
+    Req/Sec    21.77k     9.21k   39.70k    56.56%
+  23351412 requests in 1.50m, 27.27GB read
+Requests/sec: 259172.64
+Transfer/sec:    309.95MB

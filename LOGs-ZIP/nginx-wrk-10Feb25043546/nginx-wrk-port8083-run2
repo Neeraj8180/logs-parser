@@ -1,0 +1,8 @@
+Running 2m test @ http://localhost:8083/8083.bin
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.01ms    2.67ms  50.14ms   89.82%
+    Req/Sec    21.96k     8.58k   42.53k    60.24%
+  23531024 requests in 1.50m, 27.48GB read
+Requests/sec: 261182.38
+Transfer/sec:    312.35MB
