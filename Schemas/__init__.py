@@ -13,6 +13,7 @@ from .Mariadb_TPC_H import TpchBenchmarkMetrics
 from .Oracle_TPC_C import Oracle_TPC_C
 from .Oracle_TPC_H import RunMetrics
 from .TCP_RR import LatencyStats
+from .ffmpeg_schema import FFMPEGlog
 
 # Map log types to schema classes
 SCHEMA_MAP = {
@@ -30,4 +31,5 @@ SCHEMA_MAP = {
     "Oracle_TPC_C": Oracle_TPC_C,
     "Oracle_TPC_H": RunMetrics,
     "TCP_RR": LatencyStats,
+    "FFMPEG": FFMPEGlog,
 }
