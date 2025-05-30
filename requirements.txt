@@ -2,7 +2,8 @@ pydantic
 typing
 langchain
 openai
-langchain_community
+langchain-community
 langchain-openai
 python-dotenv
+ tiktoken
 
