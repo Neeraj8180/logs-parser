@@ -19,7 +19,8 @@ TOKEN_LIMIT = 100000  # GPT-4o supports up to ~128k tokens
 
 
 def normalize_log_type(log_type: str) -> str:
-    return re.sub(r'\W+', '', log_type.lower())
+    # Remove all non-alphabetic characters (i.e., remove digits and special characters)
+    return re.sub(r'[^a-zA-Z]+', '', log_type).lower()
 
 
 def read_log_file(path: str) -> str:
@@ -71,7 +72,7 @@ Summarized Logs:
 
 Rules:
 - Respond only with JSON.
-- If a metric is not mentioned, do not include it in the response.
+- If a metric is not mentioned, return its value as Null.
 """
     response = model.invoke([HumanMessage(content=prompt)])
     return parser.parse(response.content)
