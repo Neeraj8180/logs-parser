@@ -1,0 +1,7 @@
+[
+  {
+    "min_latency_us": 20,
+    "max_latency_us": 906,
+    "mean_latency_us": 27.22
+  }
+]

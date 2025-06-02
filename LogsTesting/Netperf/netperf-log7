@@ -1,0 +1,230 @@
+ #### Find Numa Node Attached To Network card with above CPU List #### 
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               64
+On-line CPU(s) list:                  0-63
+Vendor ID:                            AuthenticAMD
+BIOS Vendor ID:                       AMD
+Model name:                           AMD EPYC 7513 32-Core Processor
+BIOS Model name:                      AMD EPYC 7513 32-Core Processor                  CPU @ 2.6GHz
+BIOS CPU family:                      107
+CPU family:                           25
+Model:                                1
+Thread(s) per core:                   2
+Core(s) per socket:                   32
+Socket(s):                            1
+Stepping:                             1
+Frequency boost:                      enabled
+CPU(s) scaling MHz:                   71%
+CPU max MHz:                          3681.6399
+CPU min MHz:                          1500.0000
+BogoMIPS:                             5190.14
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca debug_swap
+Virtualization:                       AMD-V
+L1d cache:                            1 MiB (32 instances)
+L1i cache:                            1 MiB (32 instances)
+L2 cache:                             16 MiB (32 instances)
+L3 cache:                             128 MiB (4 instances)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-63
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Mitigation; Safe RET
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+ #### OS Version #### 
+Linux version 6.8.0-57-generic (buildd@lcy02-amd64-040) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #59-Ubuntu SMP PREEMPT_DYNAMIC Sat Mar 15 17:40:59 UTC 2025
+ #### CMD Line iommu=pt nohz=off#### 
+BOOT_IMAGE=/vmlinuz-6.8.0-57-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+ #### Broadcom Inc/Mellanox/Intel/Marvel #### 
+01:00.0 Serial Attached SCSI controller: Broadcom / LSI SAS3008 PCI-Express Fusion-MPT SAS-3 (rev 02)
+02:00.0 Ethernet controller: Broadcom Inc. and subsidiaries BCM57414 NetXtreme-E 10Gb/25Gb RDMA Ethernet Controller (rev 01)
+02:00.1 Ethernet controller: Broadcom Inc. and subsidiaries BCM57414 NetXtreme-E 10Gb/25Gb RDMA Ethernet Controller (rev 01)
+c1:00.0 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5720 Gigabit Ethernet PCIe
+c1:00.1 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5720 Gigabit Ethernet PCIe
+41:00.0 SATA controller: Marvell Technology Group Ltd. 88SE9230 PCIe 2.0 x2 4-port SATA 6 Gb/s RAID Controller (rev 11)
+ #### Speed Of Network card #### 
+		LnkCap:	Port #0, Speed 5GT/s, Width x2, ASPM L0s L1, Exit Latency L0s <512ns, L1 <64us
+		LnkSta:	Speed 5GT/s, Width x2
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+ #### Width of Network card #### 
+		LnkCap:	Port #0, Speed 5GT/s, Width x2, ASPM L0s L1, Exit Latency L0s <512ns, L1 <64us
+		LnkSta:	Speed 5GT/s, Width x2
+ #### Processor Speed #### 
+	Max Speed: 3900 MHz
+	Current Speed: 2600 MHz
+ #### Total Memory installed & Look For All Trained Right Speed #### 
+procs -----------memory---------- ---swap-- -----io---- -system-- -------cpu-------
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st gu
+ 1  0      0 524686412 134600 1343312    0    0     3    14  714    0  0  0 100  0  0  0
+ #### Memory Speed #### 
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+	Speed: 3200 MT/s
+	Configured Memory Speed: 3200 MT/s
+net.core.netdev_max_backlog = 25000
+net.core.netdev_budget = 1200
+net.ipv4.tcp_timestamps = 0
+ #### CPU Frequency #### 
+performance
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2930.756
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 3213.033
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 3385.135
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 1915.283
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2404.109
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 3376.478
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 3664.389
+cpu MHz		: 2928.796
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2933.391
+cpu MHz		: 3659.078
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2975.381
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 2600.000
+cpu MHz		: 3655.975
+==== rpsFlowVal = 4096 ====
+Assigning CPU affinity 0 to IRQ 90 of enp2s0f0np0
+Setting XPS CPU 1 to tx-0 of enp2s0f0np0
+Assigning CPU affinity 1 to IRQ 91 of enp2s0f0np0
+Setting XPS CPU 2 to tx-1 of enp2s0f0np0
+Assigning CPU affinity 2 to IRQ 92 of enp2s0f0np0
+Setting XPS CPU 4 to tx-2 of enp2s0f0np0
+Assigning CPU affinity 3 to IRQ 93 of enp2s0f0np0
+Setting XPS CPU 8 to tx-3 of enp2s0f0np0
+Assigning CPU affinity 4 to IRQ 94 of enp2s0f0np0
+Setting XPS CPU 10 to tx-4 of enp2s0f0np0
+Assigning CPU affinity 5 to IRQ 95 of enp2s0f0np0
+Setting XPS CPU 20 to tx-5 of enp2s0f0np0
+Assigning CPU affinity 6 to IRQ 96 of enp2s0f0np0
+Setting XPS CPU 40 to tx-6 of enp2s0f0np0
+Assigning CPU affinity 7 to IRQ 97 of enp2s0f0np0
+Setting XPS CPU 80 to tx-7 of enp2s0f0np0
+Assigning CPU affinity 8 to IRQ 99 of enp2s0f0np0
+Setting XPS CPU 100 to tx-8 of enp2s0f0np0
+Assigning CPU affinity 9 to IRQ 100 of enp2s0f0np0
+Setting XPS CPU 200 to tx-9 of enp2s0f0np0
+Assigning CPU affinity 10 to IRQ 101 of enp2s0f0np0
+Setting XPS CPU 400 to tx-10 of enp2s0f0np0
+Assigning CPU affinity 11 to IRQ 102 of enp2s0f0np0
+Setting XPS CPU 800 to tx-11 of enp2s0f0np0
+Assigning CPU affinity 12 to IRQ 103 of enp2s0f0np0
+Setting XPS CPU 1000 to tx-12 of enp2s0f0np0
+Assigning CPU affinity 13 to IRQ 104 of enp2s0f0np0
+Setting XPS CPU 2000 to tx-13 of enp2s0f0np0
+Assigning CPU affinity 14 to IRQ 105 of enp2s0f0np0
+Setting XPS CPU 4000 to tx-14 of enp2s0f0np0
+Assigning CPU affinity 15 to IRQ 106 of enp2s0f0np0
+Setting XPS CPU 8000 to tx-15 of enp2s0f0np0
+Configuration and IRQ affinities, XRFS, XPS settings Done.
+Starting netserver with host 'IN(6)ADDR_ANY' port '12865' and family AF_UNSPEC
+Netperf commands on Client host
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 0,0 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12900,32200  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 1,1 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12901,32201  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 2,2 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12902,32202  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 3,3 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12903,32203  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 4,4 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12904,32204  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 5,5 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12905,32205  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 6,6 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12906,32206  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.200 -H 192.168.1.100 -T 7,7 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12907,32207  >> log  2>&1 &
+Netperf commands on Server host for Bi-direction
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 0,0 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12900,32200  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 1,1 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12901,32201  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 2,2 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12902,32202  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 3,3 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12903,32203  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 4,4 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12904,32204  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 5,5 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12905,32205  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 6,6 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12906,32206  >> log  2>&1 &
+netperf -B interface0 -l 120 -L 192.168.1.100 -H 192.168.1.200 -T 7,7 -t TCP_SENDFILE -P 0 -- -m 64K -s 512K -S 512K -P 12907,32207  >> log  2>&1 &
+Netperf result on Client host
+1048576 1048576  65536    120.00   2957.79   interface0
+1048576 1048576  65536    120.00   2957.77   interface0
+1048576 1048576  65536    120.00   2957.56   interface0
+1048576 1048576  65536    120.00   2957.51   interface0
+1048576 1048576  65536    120.00   2957.61   interface0
+1048576 1048576  65536    120.00   2957.51   interface0
+1048576 1048576  65536    120.00   2957.56   interface0
+1048576 1048576  65536    120.00   2957.53   interface0
+Netperf result on Server host
+1048576 1048576  65536    120.00   2957.75   interface0
+1048576 1048576  65536    120.00   2957.73   interface0
+1048576 1048576  65536    120.00   2957.83   interface0
+1048576 1048576  65536    120.00   2957.70   interface0
+1048576 1048576  65536    120.00   2957.76   interface0
+1048576 1048576  65536    120.00   2957.70   interface0
+1048576 1048576  65536    120.00   2957.72   interface0
+1048576 1048576  65536    120.00   2957.72   interface0
+Client --> Server Throughput:23660.8 Mbps
+Client <-- Server Throughput:23661.9 Mbps
+Total Throughput:47322.7 Mbps

@@ -1,0 +1,119 @@
+Drop caches...
+echo 3 | sudo tee /proc/sys/vm/drop_caches
+3
+Attempting to set the CPU governor to 'performance'...
+
+Verifying that transparent huge pages are set correctly. The word 'madvise' should appear in square brackets below.
+
+always [madvise] never
+THP is set to 'madvise' and therefore set correctly. Continuing script...
+
+Running STREAM...
+cStopwatch constructor called.
+Calculating TSC frequency. Please wait...tick delta: 2596200022
+sleep(1) took 1.00006 seconds.
+TSC ticks per second = 2.59604e+09
+stream_array_size argument found: 3200000004
+NTIMES argument found: 30
+OFFSET argument found: 0
+OFFSET = 0; TUNED = 0; check_results = 0
+--------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+--------------------------------------------------------------
+This system uses 8 bytes per array element.
+--------------------------------------------------------------
+Array size = 3200000004 (elements), Offset = 0 (elements)
+Memory per array = 24414 MiB (= 23GiB).
+Total memory required = 97656.3 MiB (= 95.3674 GiB).
+Each kernel will be executed 30 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+--------------------------------------------------------------
+--------------------------------------------------------------
+Number of Threads requested = 192
+Number of Threads counted = 192
+--------------------------------------------------------------
+minDelta (ns) = 10.0152
+cStopwatch destructor called.
+Your clock granularity/precision appears to be 10 nanoseconds.
+Each test below will take on the order of 57312 microseconds.
+   (= 5731299 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+--------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+--------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:        900263.532     5.710012e-02 5.687224e-02 5.761155e-02
+Scale:       915667.710     5.612332e-02 5.591548e-02 5.908335e-02
+Add:         959901.716     8.014187e-02 8.000819e-02 8.032760e-02
+Triad:       952003.044     8.078537e-02 8.067201e-02 8.089526e-02
+Read:       1108154.938     2.382618e-02 2.310146e-02 4.145917e-02
+Write:       859277.491     2.985243e-02 2.979247e-02 3.027450e-02
+Random:         435.988     1.181910e+02 1.174344e+02 1.186617e+02
+--------------------------------------------------------------
+sum = 1.314864e+45
+cStopwatch destructor called.
+Checking for requirements...
+CPU is unknown: 'amd'. threads = 192
+Using stream-dynamic binary: "stream_dynamic"
+                           .'''''''''''''''''''''''''''''.
+                           .';cccccccccccccccccccccc:ccc:.
+                             .';:ccc:ccc:::::::::::::::::.
+                               .';ccccccccc::::::::::::::.
+                                 ..''''''''''''.';:::::::.
+                                 ..             .,:::::::.
+                               .';'             .,:::::::.
+                             .';::'             .,::::::;.
+                           .';::::'             .,::::::;.
+                          .;::::::'              ':;::::;.
+                         .,:::::::'              ,:;;;;;;.
+                         .,:::::::,'''''''''''.  .,:;;;;;.
+                         .,::::::::::::::::;,..   ..,;;;;.
+                         .,:::::::::::::;,'..       ..,;;.
+                         .,:::::::::::;,..            ..,.
+                         ..'''',,,',,'..................... ..
+          ........     ........'''.................'''.... ..............
+         ,kK000K0:           ;OK000l.           .o0KKKO,   :0KK0KK00K000Okdl;.
+        .kNNXNNNN0;          :XNNNNNO:.       .:ONNNNNK;   :XNNNNKKKKKKXNNNNN0o'
+       .dNNNXKXNNN0,         :KNNNNNNXx,  . .,kXNNNNNNK;   :XNNNXc....',:d0NNNNKl.
+      .lXNNNO;oXNNNO'        ;KNNNNNNNNKo'.'dKNNNNNNNNK;   :XNNNK;        .xXNNNXl
+      :KNXNK: .xNNNNx.       ;KNNNXkONNNNKOKNNNXkkXNNNK;   :XNNNK;         .xNNNNO'
+     ,0NNNXl.  'kNXNXd.      ;KNNNK:.l0NNNNNNX0c.:XNNNK;   :XNNNK;          lNNXNK;
+    .xXXXNx. .. ;0XXXXo.     ;KNXNK:  'dKXXNKo'  cKNXNK;   :KNXNK;         .dNXXN0,
+   .oKXXXXOxxxxxx0XKXXKl.    ;0XXXK:    ,dkd,    :KXXX0;   :KXXX0;         :0XXXXd.
+   c0KKKK0000000000KKKK0:    ;0KKK0:      ..     :KKKX0,   :0XKX0;      .,o0XKKKx'
+  ;OKKK0l'...'..'.'o0KKKO;   ;OKKK0;             :0KKKO,   ;0KKK0xllooodk0KKKKOl.
+ 'kKKKKo.          .oKKKKO,  ;0KKK0;             :0KKXO,   :0KKKKKXKXXKKK0Oxl;.
+ ';;;;;.            .;;;;:'  .;:::;.             .;:;:;.   .;::;;:::::;;,'.
+
+            ______  ________ _______  ________  ______  __       __
+           /      \|        \       \|        \/      \|  \     /  \
+          |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓\ ▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓\   /  ▓▓
+          | ▓▓___\▓▓  | ▓▓  | ▓▓__| ▓▓ ▓▓__   | ▓▓__| ▓▓ ▓▓▓\ /  ▓▓▓
+           \▓▓    \   | ▓▓  | ▓▓    ▓▓ ▓▓  \  | ▓▓    ▓▓ ▓▓▓▓\  ▓▓▓▓
+           _\▓▓▓▓▓▓\  | ▓▓  | ▓▓▓▓▓▓▓\ ▓▓▓▓▓  | ▓▓▓▓▓▓▓▓ ▓▓\▓▓ ▓▓ ▓▓
+          |  \__| ▓▓  | ▓▓  | ▓▓  | ▓▓ ▓▓_____| ▓▓  | ▓▓ ▓▓ \▓▓▓| ▓▓
+           \▓▓    ▓▓  | ▓▓  | ▓▓  | ▓▓ ▓▓     \ ▓▓  | ▓▓ ▓▓  \▓ | ▓▓
+            \▓▓▓▓▓▓    \▓▓   \▓▓   \▓▓\▓▓▓▓▓▓▓▓\▓▓   \▓▓\▓▓      \▓▓
+         _______                                          __
+        |       \                                        |  \
+        | ▓▓▓▓▓▓▓\__    __ _______   ______  ______ ____  \▓▓ _______
+        | ▓▓  | ▓▓  \  |  \       \ |      \|      \    \|\ \/       \
+        | ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓▓▓▓▓\▓▓▓▓\ ▓▓  ▓▓▓▓▓▓▓
+        | ▓▓  | ▓▓ ▓▓  | ▓▓ ▓▓  | ▓▓/      ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓ ▓▓
+        | ▓▓__/ ▓▓ ▓▓__/ ▓▓ ▓▓  | ▓▓  ▓▓▓▓▓▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓ ▓▓_____
+        | ▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓\▓▓    ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓\▓▓     \
+         \▓▓▓▓▓▓▓ _\▓▓▓▓▓▓▓\▓▓   \▓▓ \▓▓▓▓▓▓▓\▓▓  \▓▓  \▓▓\▓▓ \▓▓▓▓▓▓▓
+                 |  \__| ▓▓
+                  \▓▓    ▓▓
+                   \▓▓▓▓▓▓
+
+GOMP_CPU_AFFINITY: 0-191
+Amount of memory used in MiB: 73242.18759155273
+ntimes: 30
+threads: 192
+Setting ASLR = False
+The script completed successfully.

@@ -1,0 +1,3 @@
+MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.2.200 () port 0 AF_INET : histogram : interval : dirty data : demo : first burst 0
+Minimum Latency Microseconds,Maximum Latency Microseconds,Mean Latency Microseconds
+22,226,31.92

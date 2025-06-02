@@ -1,0 +1,66 @@
+numactl is installed. The number of NUMA nodes is 2
+numactl is installed. Continuing...
+AVX-512 is supported.
+Using the binary file name: dgemm-amd-avx512-static
+                           .'''''''''''''''''''''''''''''.
+                           .';cccccccccccccccccccccc:ccc:.
+                             .';:ccc:ccc:::::::::::::::::.
+                               .';ccccccccc::::::::::::::.
+                                 ..''''''''''''.';:::::::.
+                                 ..             .,:::::::.
+                               .';'             .,:::::::.
+                             .';::'             .,::::::;.
+                           .';::::'             .,::::::;.
+                          .;::::::'              ':;::::;.
+                         .,:::::::'              ,:;;;;;;.
+                         .,:::::::,'''''''''''.  .,:;;;;;.
+                         .,::::::::::::::::;,..   ..,;;;;.
+                         .,:::::::::::::;,'..       ..,;;.
+                         .,:::::::::::;,..            ..,.
+                         ..'''',,,',,'..................... ..
+          ........     ........'''.................'''.... ..............
+         ,kK000K0:           ;OK000l.           .o0KKKO,   :0KK0KK00K000Okdl;.
+        .kNNXNNNN0;          :XNNNNNO:.       .:ONNNNNK;   :XNNNNKKKKKKXNNNNN0o'
+       .dNNNXKXNNN0,         :KNNNNNNXx,  . .,kXNNNNNNK;   :XNNNXc....',:d0NNNNKl.
+      .lXNNNO;oXNNNO'        ;KNNNNNNNNKo'.'dKNNNNNNNNK;   :XNNNK;        .xXNNNXl
+      :KNXNK: .xNNNNx.       ;KNNNXkONNNNKOKNNNXkkXNNNK;   :XNNNK;         .xNNNNO'
+     ,0NNNXl.  'kNXNXd.      ;KNNNK:.l0NNNNNNX0c.:XNNNK;   :XNNNK;          lNNXNK;
+    .xXXXNx. .. ;0XXXXo.     ;KNXNK:  'dKXXNKo'  cKNXNK;   :KNXNK;         .dNXXN0,
+   .oKXXXXOxxxxxx0XKXXKl.    ;0XXXK:    ,dkd,    :KXXX0;   :KXXX0;         :0XXXXd.
+   c0KKKK0000000000KKKK0:    ;0KKK0:      ..     :KKKX0,   :0XKX0;      .,o0XKKKx'
+  ;OKKK0l'...'..'.'o0KKKO;   ;OKKK0;             :0KKKO,   ;0KKK0xllooodk0KKKKOl.
+ 'kKKKKo.          .oKKKKO,  ;0KKK0;             :0KKXO,   :0KKKKKXKXXKKK0Oxl;.
+ ';;;;;.            .;;;;:'  .;:::;.             .;:;:;.   .;::;;:::::;;,'.
+   ******************************************************************************
+    █████╗ ███╗   ███╗██████╗     ██████╗  ██████╗ ███████╗███╗   ███╗███╗   ███╗
+   ██╔══██╗████╗ ████║██╔══██╗    ██╔══██╗██╔════╝ ██╔════╝████╗ ████║████╗ ████║
+   ███████║██╔████╔██║██║  ██║    ██║  ██║██║  ███╗█████╗  ██╔████╔██║██╔████╔██║
+   ██╔══██║██║╚██╔╝██║██║  ██║    ██║  ██║██║   ██║██╔══╝  ██║╚██╔╝██║██║╚██╔╝██║
+   ██║  ██║██║ ╚═╝ ██║██████╔╝    ██████╔╝╚██████╔╝███████╗██║ ╚═╝ ██║██║ ╚═╝ ██║
+   ╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝     ╚═════╝  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝     ╚═╝
+   ******************************************************************************
+Checking for lstopo...
+[always] madvise never
+THP is set to 'always' and is therefore set correctly. Continuing script...
+The cpupower governor is set to 'performance'.
+lstopo is installed here: /usr/bin/lstopo-no-graphics
+lstopo found. Continuing...
+threads per numa node = 128
+NUMA node = 0
+NUMA node core range = 0-127
+core_start = 0
+core_end = 127
+NUMA node = 1
+NUMA node core range = 128-255
+core_start = 128
+core_end = 255
+Executing bash file /home/amd/DGEMM/temp_dgemm_bash.sh...
+================================================================================
+...............................AMD DGEMM Results................................
+--------------------------------------------------------------------------------
+m = 16000
+k = 16000
+n = 16000
+iterations = 5
+GFLOPS: 17760.02
+================================================================================

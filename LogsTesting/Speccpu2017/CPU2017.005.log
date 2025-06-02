@@ -1,0 +1,1679 @@
+runcpu v6612 started at 2025-05-20 12:26:40 on "idrac-JPN53W2-host"
+runcpu is: /home/amd/SPECcpu2017/bin/harness/runcpu
+runcpu: runcpu --config amd_speed_aocc320_milanx_A1.cfg --ignoreerror --noreportable --iterations 1 --size ref --tune base fpspeed
+toolset: linux-x86_64
+suite: CPU2017 1.1.9
+
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/home/amd/SPECcpu2017/config/amd_speed_aocc320_milanx_A1.cfg'
+Reading included config file '/home/amd/SPECcpu2017/config/amd_speed_aocc320_milanx_A1.inc'
+Notice: Ignored non-comment line in file /home/amd/SPECcpu2017/config/amd_speed_aocc320_milanx_A1.cfg:
+  line 480: "620.omnetpp_s =peak:"
+
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   speed      refspeed   SPECspeed2017_fp   fpspeed                    
+-------------------------------------------------------------------------------
+
+Setting up environment for running fpspeed...
+Starting runcpu for fpspeed...
+Notice: Ignored non-comment line in file /home/amd/SPECcpu2017/config/amd_speed_aocc320_milanx_A1.cfg:
+  line 480: "620.omnetpp_s =peak:"
+Running "specperl /home/amd/SPECcpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Read 331 info lines from the sysinfo program:
+  1: notes_plat_sysinfo_100 =  
+  2: notes_plat_sysinfo_101 = Sysinfo program /home/amd/SPECcpu2017/bin/sysinfo
+  3: notes_plat_sysinfo_102 = Rev: r6732 of 2022-11-07 fe91c89b7ed5c36ae2c92cc097bec197
+  4: notes_plat_sysinfo_103 = running on idrac-JPN53W2-host Tue May 20 12:26:42 2025
+  5: notes_plat_sysinfo_104 =  
+  6: notes_plat_sysinfo_105 = SUT (System Under Test) info as seen by some common utilities.
+  7: notes_plat_sysinfo_107 = 
+  8: notes_plat_sysinfo_108 = ------------------------------------------------------------
+  9: notes_plat_sysinfo_109 = Table of contents
+ 10: notes_plat_sysinfo_110 = ------------------------------------------------------------
+ 11: notes_plat_sysinfo_111 =  1. uname -a
+ 12: notes_plat_sysinfo_112 =  2. w
+ 13: notes_plat_sysinfo_113 =  3. Username
+ 14: notes_plat_sysinfo_114 =  4. ulimit -a
+ 15: notes_plat_sysinfo_115 =  5. sysinfo process ancestry
+ 16: notes_plat_sysinfo_116 =  6. /proc/cpuinfo
+ 17: notes_plat_sysinfo_117 =  7. lscpu
+ 18: notes_plat_sysinfo_118 =  8. numactl --hardware
+ 19: notes_plat_sysinfo_119 =  9. /proc/meminfo
+ 20: notes_plat_sysinfo_120 = 10. who -r
+ 21: notes_plat_sysinfo_121 = 11. Systemd service manager version: systemd 249 (249.16+suse.171.gdad0071f15)
+ 22: notes_plat_sysinfo_122 = 12. Services, from systemctl list-unit-files
+ 23: notes_plat_sysinfo_123 = 13. Linux kernel boot-time arguments, from /proc/cmdline
+ 24: notes_plat_sysinfo_124 = 14. cpupower frequency-info
+ 25: notes_plat_sysinfo_125 = 15. sysctl
+ 26: notes_plat_sysinfo_126 = 16. /sys/kernel/mm/transparent_hugepage
+ 27: notes_plat_sysinfo_127 = 17. /sys/kernel/mm/transparent_hugepage/khugepaged
+ 28: notes_plat_sysinfo_128 = 18. OS release
+ 29: notes_plat_sysinfo_129 = 19. Disk information
+ 30: notes_plat_sysinfo_130 = 20. /sys/devices/virtual/dmi/id
+ 31: notes_plat_sysinfo_131 = 21. dmidecode
+ 32: notes_plat_sysinfo_132 = 22. BIOS
+ 33: notes_plat_sysinfo_133 = ------------------------------------------------------------
+ 34: notes_plat_sysinfo_206 =  
+ 35: notes_plat_sysinfo_207 = ------------------------------------------------------------
+ 36: notes_plat_sysinfo_208 = 1. uname -a
+ 37: notes_plat_sysinfo_209 =   Linux idrac-JPN53W2-host 5.14.21-150500.53-default #1 SMP PREEMPT_DYNAMIC Wed May 10 07:56:26 UTC 2023
+ 38: notes_plat_sysinfo_210 =   (b630043/lp) x86_64 x86_64 x86_64 GNU/Linux
+ 39: notes_plat_sysinfo_211 =  
+ 40: notes_plat_sysinfo_212 = ------------------------------------------------------------
+ 41: notes_plat_sysinfo_213 = 2. w
+ 42: notes_plat_sysinfo_214 =    12:26:42 up 10:36,  0 users,  load average: 4.40, 6.39, 4.85
+ 43: notes_plat_sysinfo_215 =   USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ 44: notes_plat_sysinfo_216 =  
+ 45: notes_plat_sysinfo_217 = ------------------------------------------------------------
+ 46: notes_plat_sysinfo_218 = 3. Username
+ 47: notes_plat_sysinfo_219 =   From environment variable $USER:  root
+ 48: notes_plat_sysinfo_220 =   From the command 'logname':       amd
+ 49: notes_plat_sysinfo_221 =  
+ 50: notes_plat_sysinfo_222 = ------------------------------------------------------------
+ 51: notes_plat_sysinfo_223 = 4. ulimit -a
+ 52: notes_plat_sysinfo_224 =   core file size          (blocks, -c) 0
+ 53: notes_plat_sysinfo_225 =   data seg size           (kbytes, -d) unlimited
+ 54: notes_plat_sysinfo_226 =   scheduling priority             (-e) 40
+ 55: notes_plat_sysinfo_227 =   file size               (blocks, -f) unlimited
+ 56: notes_plat_sysinfo_228 =   pending signals                 (-i) 1028503
+ 57: notes_plat_sysinfo_229 =   max locked memory       (kbytes, -l) 2097152
+ 58: notes_plat_sysinfo_230 =   max memory size         (kbytes, -m) unlimited
+ 59: notes_plat_sysinfo_231 =   open files                      (-n) 1024
+ 60: notes_plat_sysinfo_232 =   pipe size            (512 bytes, -p) 8
+ 61: notes_plat_sysinfo_233 =   POSIX message queues     (bytes, -q) 819200
+ 62: notes_plat_sysinfo_234 =   real-time priority              (-r) 100
+ 63: notes_plat_sysinfo_235 =   stack size              (kbytes, -s) unlimited
+ 64: notes_plat_sysinfo_236 =   cpu time               (seconds, -t) unlimited
+ 65: notes_plat_sysinfo_237 =   max user processes              (-u) 1028503
+ 66: notes_plat_sysinfo_238 =   virtual memory          (kbytes, -v) unlimited
+ 67: notes_plat_sysinfo_239 =   file locks                      (-x) unlimited
+ 68: notes_plat_sysinfo_240 =  
+ 69: notes_plat_sysinfo_241 = ------------------------------------------------------------
+ 70: notes_plat_sysinfo_242 = 5. sysinfo process ancestry
+ 71: notes_plat_sysinfo_243 =  /usr/lib/systemd/systemd --switched-root --system --deserialize 30
+ 72: notes_plat_sysinfo_244 =  sh run.sh
+ 73: notes_plat_sysinfo_245 =  python3 ./run_amd_speed_aocc320_milanx_A1.py
+ 74: notes_plat_sysinfo_246 =  /bin/bash ./amd_speed_aocc320_milanx_A1.sh
+ 75: notes_plat_sysinfo_247 =  runcpu --config amd_speed_aocc320_milanx_A1.cfg --ignoreerror --noreportable --iterations 1 --size ref
+ 76: notes_plat_sysinfo_248 =    --tune base fpspeed
+ 77: notes_plat_sysinfo_249 =  runcpu --configfile amd_speed_aocc320_milanx_A1.cfg --ignore_errors --noreportable --iterations 1 --size ref
+ 78: notes_plat_sysinfo_250 =    --tune base --noreportable --nopower --runmode speed --tune base --size refspeed fpspeed --nopreenv
+ 79: notes_plat_sysinfo_251 =    --note-preenv --logfile $SPEC/tmp/CPU2017.005/templogs/preenv.fpspeed.005.0.log --lognum 005.0
+ 80: notes_plat_sysinfo_252 =    --from_runcpu 2
+ 81: notes_plat_sysinfo_253 =  specperl $SPEC/bin/sysinfo
+ 82: notes_plat_sysinfo_254 = $SPEC = /home/amd/SPECcpu2017
+ 83: notes_plat_sysinfo_255 =  
+ 84: notes_plat_sysinfo_256 = ------------------------------------------------------------
+ 85: notes_plat_sysinfo_257 = 6. /proc/cpuinfo
+ 86: notes_plat_sysinfo_258 =     model name      : AMD EPYC 7551P 32-Core Processor
+ 87: notes_plat_sysinfo_259 =     vendor_id       : AuthenticAMD
+ 88: notes_plat_sysinfo_260 =     cpu family      : 23
+ 89: notes_plat_sysinfo_261 =     model           : 1
+ 90: notes_plat_sysinfo_262 =     stepping        : 2
+ 91: notes_plat_sysinfo_263 =     microcode       : 0x8001278
+ 92: notes_plat_sysinfo_264 =     bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed
+ 93: notes_plat_sysinfo_265 =     TLB size        : 2560 4K pages
+ 94: notes_plat_sysinfo_266 =     cpu cores       : 32
+ 95: notes_plat_sysinfo_267 =     siblings        : 64
+ 96: notes_plat_sysinfo_268 =     1 physical ids (chips)
+ 97: notes_plat_sysinfo_269 =     64 processors (hardware threads)
+ 98: notes_plat_sysinfo_270 =     physical id 0: core ids 0-31
+ 99: notes_plat_sysinfo_271 =     physical id 0: apicids 0-63
+100: notes_plat_sysinfo_272 =   Caution: /proc/cpuinfo data regarding chips, cores, and threads is not necessarily reliable, especially for
+101: notes_plat_sysinfo_273 =   virtualized systems.  Use the above data carefully.
+102: notes_plat_sysinfo_274 =  
+103: notes_plat_sysinfo_275 = ------------------------------------------------------------
+104: notes_plat_sysinfo_276 = 7. lscpu
+105: notes_plat_sysinfo_277 =  
+106: notes_plat_sysinfo_278 = From lscpu from util-linux 2.37.4:
+107: notes_plat_sysinfo_279 =   Architecture:                    x86_64
+108: notes_plat_sysinfo_280 =   CPU op-mode(s):                  32-bit, 64-bit
+109: notes_plat_sysinfo_281 =   Address sizes:                   43 bits physical, 48 bits virtual
+110: notes_plat_sysinfo_282 =   Byte Order:                      Little Endian
+111: notes_plat_sysinfo_283 =   CPU(s):                          64
+112: notes_plat_sysinfo_284 =   On-line CPU(s) list:             0-63
+113: notes_plat_sysinfo_285 =   Vendor ID:                       AuthenticAMD
+114: notes_plat_sysinfo_286 =   Model name:                      AMD EPYC 7551P 32-Core Processor
+115: notes_plat_sysinfo_287 =   CPU family:                      23
+116: notes_plat_sysinfo_288 =   Model:                           1
+117: notes_plat_sysinfo_289 =   Thread(s) per core:              2
+118: notes_plat_sysinfo_290 =   Core(s) per socket:              32
+119: notes_plat_sysinfo_291 =   Socket(s):                       1
+120: notes_plat_sysinfo_292 =   Stepping:                        2
+121: notes_plat_sysinfo_293 =   Frequency boost:                 enabled
+122: notes_plat_sysinfo_294 =   CPU max MHz:                     2000.0000
+123: notes_plat_sysinfo_295 =   CPU min MHz:                     1200.0000
+124: notes_plat_sysinfo_296 =   BogoMIPS:                        3992.46
+125: notes_plat_sysinfo_297 =   Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36
+126: notes_plat_sysinfo_298 =                                    clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm
+127: notes_plat_sysinfo_299 =                                    constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid amd_dcm
+128: notes_plat_sysinfo_300 =                                    aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe
+129: notes_plat_sysinfo_301 =                                    popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy
+130: notes_plat_sysinfo_302 =                                    abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext
+131: notes_plat_sysinfo_303 =                                    perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb
+132: notes_plat_sysinfo_304 =                                    vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni
+133: notes_plat_sysinfo_305 =                                    xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv
+134: notes_plat_sysinfo_306 =                                    svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists
+135: notes_plat_sysinfo_307 =                                    pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor
+136: notes_plat_sysinfo_308 =                                    smca sme sev sev_es
+137: notes_plat_sysinfo_309 =   Virtualization:                  AMD-V
+138: notes_plat_sysinfo_310 =   L1d cache:                       1 MiB (32 instances)
+139: notes_plat_sysinfo_311 =   L1i cache:                       2 MiB (32 instances)
+140: notes_plat_sysinfo_312 =   L2 cache:                        16 MiB (32 instances)
+141: notes_plat_sysinfo_313 =   L3 cache:                        64 MiB (8 instances)
+142: notes_plat_sysinfo_314 =   NUMA node(s):                    4
+143: notes_plat_sysinfo_315 =   NUMA node0 CPU(s):               0-7,32-39
+144: notes_plat_sysinfo_316 =   NUMA node1 CPU(s):               8-15,40-47
+145: notes_plat_sysinfo_317 =   NUMA node2 CPU(s):               16-23,48-55
+146: notes_plat_sysinfo_318 =   NUMA node3 CPU(s):               24-31,56-63
+147: notes_plat_sysinfo_319 =   Vulnerability Itlb multihit:     Not affected
+148: notes_plat_sysinfo_320 =   Vulnerability L1tf:              Not affected
+149: notes_plat_sysinfo_321 =   Vulnerability Mds:               Not affected
+150: notes_plat_sysinfo_322 =   Vulnerability Meltdown:          Not affected
+151: notes_plat_sysinfo_323 =   Vulnerability Mmio stale data:   Not affected
+152: notes_plat_sysinfo_324 =   Vulnerability Retbleed:          Mitigation; untrained return thunk; SMT vulnerable
+153: notes_plat_sysinfo_325 =   Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+154: notes_plat_sysinfo_326 =   Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+155: notes_plat_sysinfo_327 =   Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP disabled, RSB filling,
+156: notes_plat_sysinfo_328 =                                    PBRSB-eIBRS Not affected
+157: notes_plat_sysinfo_329 =   Vulnerability Srbds:             Not affected
+158: notes_plat_sysinfo_330 =   Vulnerability Tsx async abort:   Not affected
+159: notes_plat_sysinfo_331 =  
+160: notes_plat_sysinfo_332 = From lscpu --cache:
+161: notes_plat_sysinfo_333 =      NAME ONE-SIZE ALL-SIZE WAYS TYPE        LEVEL SETS PHY-LINE COHERENCY-SIZE
+162: notes_plat_sysinfo_334 =      L1d       32K       1M    8 Data            1   64        1             64
+163: notes_plat_sysinfo_335 =      L1i       64K       2M    4 Instruction     1  256        1             64
+164: notes_plat_sysinfo_336 =      L2       512K      16M    8 Unified         2 1024        1             64
+165: notes_plat_sysinfo_337 =      L3         8M      64M   16 Unified         3 8192        1             64
+166: notes_plat_sysinfo_338 =  
+167: notes_plat_sysinfo_339 = ------------------------------------------------------------
+168: notes_plat_sysinfo_340 = 8. numactl --hardware
+169: notes_plat_sysinfo_341 = NOTE: a numactl 'node' might or might not correspond to a physical chip.
+170: notes_plat_sysinfo_342 =   available: 4 nodes (0-3)
+171: notes_plat_sysinfo_343 =   node 0 cpus: 0-7,32-39
+172: notes_plat_sysinfo_344 =   node 0 size: 64048 MB
+173: notes_plat_sysinfo_345 =   node 0 free: 63773 MB
+174: notes_plat_sysinfo_346 =   node 1 cpus: 8-15,40-47
+175: notes_plat_sysinfo_347 =   node 1 size: 64469 MB
+176: notes_plat_sysinfo_348 =   node 1 free: 64118 MB
+177: notes_plat_sysinfo_349 =   node 2 cpus: 16-23,48-55
+178: notes_plat_sysinfo_350 =   node 2 size: 64503 MB
+179: notes_plat_sysinfo_351 =   node 2 free: 64185 MB
+180: notes_plat_sysinfo_352 =   node 3 cpus: 24-31,56-63
+181: notes_plat_sysinfo_353 =   node 3 size: 64136 MB
+182: notes_plat_sysinfo_354 =   node 3 free: 63340 MB
+183: notes_plat_sysinfo_355 =   node distances:
+184: notes_plat_sysinfo_356 =   node   0   1   2   3
+185: notes_plat_sysinfo_357 =     0:  10  16  16  16
+186: notes_plat_sysinfo_358 =     1:  16  10  16  16
+187: notes_plat_sysinfo_359 =     2:  16  16  10  16
+188: notes_plat_sysinfo_360 =     3:  16  16  16  10
+189: notes_plat_sysinfo_361 =  
+190: notes_plat_sysinfo_362 = ------------------------------------------------------------
+191: notes_plat_sysinfo_363 = 9. /proc/meminfo
+192: notes_plat_sysinfo_364 =    MemTotal:       263328864 kB
+193: notes_plat_sysinfo_365 =  
+194: notes_plat_sysinfo_366 = ------------------------------------------------------------
+195: notes_plat_sysinfo_367 = 10. who -r
+196: notes_plat_sysinfo_368 =   run-level 5 May 20 01:51
+197: notes_plat_sysinfo_369 =  
+198: notes_plat_sysinfo_370 = ------------------------------------------------------------
+199: notes_plat_sysinfo_371 = 11. Systemd service manager version: systemd 249 (249.16+suse.171.gdad0071f15)
+200: notes_plat_sysinfo_372 =   Default Target  Status
+201: notes_plat_sysinfo_373 =   graphical       running
+202: notes_plat_sysinfo_374 =  
+203: notes_plat_sysinfo_375 = ------------------------------------------------------------
+204: notes_plat_sysinfo_376 = 12. Services, from systemctl list-unit-files
+205: notes_plat_sysinfo_377 =   STATE            UNIT FILES
+206: notes_plat_sysinfo_378 =   enabled          ModemManager YaST2-Firstboot YaST2-Second-Stage apparmor appstream-sync-cache auditd
+207: notes_plat_sysinfo_379 =                    bluetooth cron display-manager getty@ irqbalance issue-generator kbdsettings kdump
+208: notes_plat_sysinfo_380 =                    kdump-early klog lvm2-monitor nscd postfix purge-kernels rollback rsyslog smartd sshd
+209: notes_plat_sysinfo_381 =                    systemd-pstore wicked wickedd-auto4 wickedd-dhcp4 wickedd-dhcp6 wickedd-nanny
+210: notes_plat_sysinfo_382 =                    wpa_supplicant
+211: notes_plat_sysinfo_383 =   enabled-runtime  systemd-remount-fs
+212: notes_plat_sysinfo_384 =   disabled         NetworkManager NetworkManager-dispatcher NetworkManager-wait-online accounts-daemon autofs
+213: notes_plat_sysinfo_385 =                    autoyast-initscripts blk-availability bluetooth-mesh boot-sysctl ca-certificates
+214: notes_plat_sysinfo_386 =                    chrony-wait chronyd console-getty cups cups-browsed debug-shell dmraid-activation dnsmasq
+215: notes_plat_sysinfo_387 =                    ebtables exchange-bmc-os-info firewalld gpm grub2-once haveged haveged-switch-root ipmi
+216: notes_plat_sysinfo_388 =                    ipmievd irqbindall issue-add-ssh-keys kexec-load ksm kvm_stat lunmask man-db-create
+217: notes_plat_sysinfo_389 =                    multipathd nfs nfs-blkmap nmb openvpn@ ostree-remount rpcbind rpmconfigcheck rsyncd
+218: notes_plat_sysinfo_390 =                    rtkit-daemon serial-getty@ set_kthread_prio smartd_generate_opts smb snmpd snmptrapd
+219: notes_plat_sysinfo_391 =                    speech-dispatcherd svnserve systemd-boot-check-no-failures systemd-network-generator
+220: notes_plat_sysinfo_392 =                    systemd-sysext systemd-time-wait-sync systemd-timesyncd udisks2 update-system-flatpaks
+221: notes_plat_sysinfo_393 =                    upower vncserver@ wpa_supplicant@
+222: notes_plat_sysinfo_394 =   indirect         pcscd saned@ wickedd
+223: notes_plat_sysinfo_395 =  
+224: notes_plat_sysinfo_396 = ------------------------------------------------------------
+225: notes_plat_sysinfo_397 = 13. Linux kernel boot-time arguments, from /proc/cmdline
+226: notes_plat_sysinfo_398 =   BOOT_IMAGE=/boot/vmlinuz-5.14.21-150500.53-default
+227: notes_plat_sysinfo_399 =   root=UUID=3b287bbd-bd84-4152-b90f-05e6b2da564f
+228: notes_plat_sysinfo_400 =   splash=silent
+229: notes_plat_sysinfo_401 =   resume=/dev/disk/by-uuid/2ab7bd16-de8b-4b83-af90-ea02dc0b66ad
+230: notes_plat_sysinfo_402 =   mitigations=auto
+231: notes_plat_sysinfo_403 =   quiet
+232: notes_plat_sysinfo_404 =   security=apparmor
+233: notes_plat_sysinfo_405 =   crashkernel=330M,high
+234: notes_plat_sysinfo_406 =   crashkernel=72M,low
+235: notes_plat_sysinfo_407 =  
+236: notes_plat_sysinfo_408 = ------------------------------------------------------------
+237: notes_plat_sysinfo_409 = 14. cpupower frequency-info
+238: notes_plat_sysinfo_410 =   analyzing CPU 0:
+239: notes_plat_sysinfo_411 =     current policy: frequency should be within 1.20 GHz and 2.00 GHz.
+240: notes_plat_sysinfo_412 =                     The governor "ondemand" may decide which speed to use
+241: notes_plat_sysinfo_413 =                     within this range.
+242: notes_plat_sysinfo_414 =     boost state support:
+243: notes_plat_sysinfo_415 =       Supported: yes
+244: notes_plat_sysinfo_416 =       Active: yes
+245: notes_plat_sysinfo_417 =  
+246: notes_plat_sysinfo_418 = ------------------------------------------------------------
+247: notes_plat_sysinfo_419 = 15. sysctl
+248: notes_plat_sysinfo_420 =   kernel.numa_balancing               0
+249: notes_plat_sysinfo_421 =   kernel.randomize_va_space           0
+250: notes_plat_sysinfo_422 =   vm.compaction_proactiveness        20
+251: notes_plat_sysinfo_423 =   vm.dirty_background_bytes           0
+252: notes_plat_sysinfo_424 =   vm.dirty_background_ratio          10
+253: notes_plat_sysinfo_425 =   vm.dirty_bytes                      0
+254: notes_plat_sysinfo_426 =   vm.dirty_expire_centisecs        3000
+255: notes_plat_sysinfo_427 =   vm.dirty_ratio                      8
+256: notes_plat_sysinfo_428 =   vm.dirty_writeback_centisecs      500
+257: notes_plat_sysinfo_429 =   vm.dirtytime_expire_seconds     43200
+258: notes_plat_sysinfo_430 =   vm.extfrag_threshold              500
+259: notes_plat_sysinfo_431 =   vm.min_unmapped_ratio               1
+260: notes_plat_sysinfo_432 =   vm.nr_hugepages                     0
+261: notes_plat_sysinfo_433 =   vm.nr_hugepages_mempolicy           0
+262: notes_plat_sysinfo_434 =   vm.nr_overcommit_hugepages          0
+263: notes_plat_sysinfo_435 =   vm.swappiness                       1
+264: notes_plat_sysinfo_436 =   vm.watermark_boost_factor       15000
+265: notes_plat_sysinfo_437 =   vm.watermark_scale_factor          10
+266: notes_plat_sysinfo_438 =   vm.zone_reclaim_mode                1
+267: notes_plat_sysinfo_439 =  
+268: notes_plat_sysinfo_440 = ------------------------------------------------------------
+269: notes_plat_sysinfo_441 = 16. /sys/kernel/mm/transparent_hugepage
+270: notes_plat_sysinfo_442 =   defrag          always defer defer+madvise [madvise] never
+271: notes_plat_sysinfo_443 =   enabled         always [madvise] never
+272: notes_plat_sysinfo_444 =   hpage_pmd_size  2097152
+273: notes_plat_sysinfo_445 =   shmem_enabled   always within_size advise [never] deny force
+274: notes_plat_sysinfo_446 =  
+275: notes_plat_sysinfo_447 = ------------------------------------------------------------
+276: notes_plat_sysinfo_448 = 17. /sys/kernel/mm/transparent_hugepage/khugepaged
+277: notes_plat_sysinfo_449 =   alloc_sleep_millisecs   60000
+278: notes_plat_sysinfo_450 =   defrag                      1
+279: notes_plat_sysinfo_451 =   max_ptes_none             511
+280: notes_plat_sysinfo_452 =   max_ptes_shared           256
+281: notes_plat_sysinfo_453 =   max_ptes_swap              64
+282: notes_plat_sysinfo_454 =   pages_to_scan            4096
+283: notes_plat_sysinfo_455 =   scan_sleep_millisecs    10000
+284: notes_plat_sysinfo_456 =  
+285: notes_plat_sysinfo_457 = ------------------------------------------------------------
+286: notes_plat_sysinfo_458 = 18. OS release
+287: notes_plat_sysinfo_459 =   From /etc/*-release /etc/*-version
+288: notes_plat_sysinfo_460 =   os-release SUSE Linux Enterprise Server 15 SP5
+289: notes_plat_sysinfo_461 =  
+290: notes_plat_sysinfo_462 = ------------------------------------------------------------
+291: notes_plat_sysinfo_463 = 19. Disk information
+292: notes_plat_sysinfo_464 = SPEC is set to: /home/amd/SPECcpu2017
+293: notes_plat_sysinfo_465 =   Filesystem     Type  Size  Used Avail Use% Mounted on
+294: notes_plat_sysinfo_466 =   /dev/sda4      xfs   154G  5.9G  149G   4% /home
+295: notes_plat_sysinfo_467 =  
+296: notes_plat_sysinfo_468 = ------------------------------------------------------------
+297: notes_plat_sysinfo_469 = 20. /sys/devices/virtual/dmi/id
+298: notes_plat_sysinfo_470 =     Vendor:         Dell Inc.
+299: notes_plat_sysinfo_471 =     Product:        PowerEdge R6415
+300: notes_plat_sysinfo_472 =     Product Family: PowerEdge
+301: notes_plat_sysinfo_473 =     Serial:         JPN53W2
+302: notes_plat_sysinfo_474 =  
+303: notes_plat_sysinfo_475 = ------------------------------------------------------------
+304: notes_plat_sysinfo_476 = 21. dmidecode
+305: notes_plat_sysinfo_477 =   Additional information from dmidecode 3.4 follows.  WARNING: Use caution when you interpret this section.
+306: notes_plat_sysinfo_478 =   The 'dmidecode' program reads system data which is "intended to allow hardware to be accurately
+307: notes_plat_sysinfo_479 =   determined", but the intent may not be met, as there are frequent changes to hardware, firmware, and the
+308: notes_plat_sysinfo_480 =   "DMTF SMBIOS" standard.
+309: notes_plat_sysinfo_481 =   Memory:
+310: notes_plat_sysinfo_482 =     8x 802C80B3802C 36ASF4G72PZ-2G6D1 32 GB 2 rank 2666, configured at 2400
+311: notes_plat_sysinfo_483 =  
+312: notes_plat_sysinfo_484 =  
+313: notes_plat_sysinfo_485 = ------------------------------------------------------------
+314: notes_plat_sysinfo_486 = 22. BIOS
+315: notes_plat_sysinfo_487 = (This section combines info from /sys/devices and dmidecode.)
+316: notes_plat_sysinfo_488 =    BIOS Vendor:       Dell Inc.
+317: notes_plat_sysinfo_489 =    BIOS Version:      1.25.0
+318: notes_plat_sysinfo_490 =    BIOS Date:         02/20/2025
+319: notes_plat_sysinfo_491 =    BIOS Revision:     1.25
+320: hw_cpu_name        = AMD EPYC 7551P
+321: hw_disk            = 154 GB  add more disk info here
+322: hw_memory001       = 251.130 GB fixme: If using DDR4, the format is:
+323: hw_memory002       = 'N GB (N x N GB nRxn PC4-nnnnX-X)'
+324: hw_nchips          = 1
+325: hw_ncores          = 32
+326: hw_nthreadspercore = 2
+327: prepared_by        = root  (is never output, only tags rawfile)
+328: sw_file            = xfs
+329: sw_os001           = SUSE Linux Enterprise Server 15 SP5
+330: sw_os002           = 5.14.21-150500.53-default
+331: sw_state           = Run level 5 (add definition here)
+
+WARNING: Your config file sets some fields that are also set by sysinfo:
+  hw_cpu_name, hw_ncores, hw_nthreadspercore
+To avoid this warning in the future, see
+  https://www.spec.org/cpu2017/Docs/config.html#sysinfo
+
+Retrieving flags file (/home/amd/SPECcpu2017/aocc320-flags-A1.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base
+Label     = amd_speed_aocc320_milanx_A
+Size      = refspeed
+benchmarks= 603.bwaves_s,607.cactuBSSN_s,619.lbm_s,621.wrf_s,627.cam4_s,628.pop2_s,638.imagick_s,644.nab_s,649.fotonik3d_s,654.roms_s,996.specrand_fs
+outputs   = all
+username  = root
+Environment settings:
+GOMP_CPU_AFFINITY = "0-63"
+LD_LIBRARY_PATH = "/home/amd/SPECcpu2017/%{lib_dir}/lib;/home/amd/SPECcpu2017/%{lib_dir}/lib32:%{ENV_LD_LIBRARY_PATH}"
+LIBOMP_NUM_HIDDEN_HELPER_THREADS = "0"
+MALLOC_CONF = "retain:true"
+OMP_DYNAMIC = "false"
+OMP_SCHEDULE = "static"
+OMP_STACKSIZE = "128M"
+OMP_THREAD_LIMIT = "64"
+
+Benchmarks selected: 603.bwaves_s, 607.cactuBSSN_s, 619.lbm_s, 621.wrf_s, 627.cam4_s, 628.pop2_s, 638.imagick_s, 644.nab_s, 649.fotonik3d_s, 654.roms_s, 996.specrand_fs
+Compiling Binaries
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+/bin/sh: flang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 603.bwaves_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+COMP: "clang++ -m64 -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -mllvm -enable-partial-unswitch -mllvm -unroll-threshold=100 -finline-aggressive -flv-function-specialization -mllvm -loop-unswitch-threshold=200000 -mllvm -reroll-loops -mllvm -aggressive-loop-unswitch -mllvm -extra-vectorizer-passes -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -convert-pow-exp-to-int=false      -DSPEC_OPENMP -fopenmp -Wno-return-type  -DSPEC_LP64  <source>"
+C: CXXC="clang++ -m64"
+C: CXXOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CXXFLAGS="-Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1"
+O: OPTIMIZE=""
+O: CXXOPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -mllvm -enable-partial-unswitch -mllvm -unroll-threshold=100 -finline-aggressive -flv-function-specialization -mllvm -loop-unswitch-threshold=200000 -mllvm -reroll-loops -mllvm -aggressive-loop-unswitch -mllvm -extra-vectorizer-passes -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -convert-pow-exp-to-int=false"
+P: PORTABILITY=""
+P: CXXPORTABILITY=""
+O: EXTRA_CXXFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_CXXOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CXXPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-Iinclude -DCCODE"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -Iinclude -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-Iinclude -DFCODE"
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "clang++ -m64  -Wl,-mllvm -Wl,-x86-use-vzeroupper=false -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -mllvm -enable-partial-unswitch -mllvm -unroll-threshold=100 -finline-aggressive -flv-function-specialization -mllvm -loop-unswitch-threshold=200000 -mllvm -reroll-loops -mllvm -aggressive-loop-unswitch -mllvm -extra-vectorizer-passes -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -convert-pow-exp-to-int=false   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang++ -m64"
+O: LDCXXFLAGS="-Wl,-mllvm -Wl,-x86-use-vzeroupper=false"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: CXXOPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -mllvm -enable-partial-unswitch -mllvm -unroll-threshold=100 -finline-aggressive -flv-function-specialization -mllvm -loop-unswitch-threshold=200000 -mllvm -reroll-loops -mllvm -aggressive-loop-unswitch -mllvm -extra-vectorizer-passes -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -convert-pow-exp-to-int=false"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CXXC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+ FC_VERSION_OPTION:
+/bin/sh: clang++: command not found
+/bin/sh: clang: command not found
+/bin/sh: flang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 607.cactuBSSN_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -DLARGE_WORKLOAD   -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DLARGE_WORKLOAD"
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "clang   -m64   -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang   -m64"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CC_VERSION_OPTION:
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 619.lbm_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DDM_PARALLEL -DSTUBMPI -w -m literal.pm -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DEM_CORE=1 -DNMM_CORE=0 -DNMM_MAX_DIM=2600 -DCOAMPS_CORE=0 -DDA_CORE=0 -DEXP_CORE=0 -DIWORDSIZE=4 -DDWORDSIZE=8 -DRWORDSIZE=4 -DLWORDSIZE=4 -DNETCDF -DINTIO -DCONFIG_BUF_LEN=32768 -DMAX_DOMAINS_F=21 -DNMM_NEST=0 -DMAX_HISTORY=25 -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DDM_PARALLEL -DSTUBMPI"
+P: BENCH_FPPFLAGS="-w -m literal.pm -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DEM_CORE=1 -DNMM_CORE=0 -DNMM_MAX_DIM=2600 -DCOAMPS_CORE=0 -DDA_CORE=0 -DEXP_CORE=0 -DIWORDSIZE=4 -DDWORDSIZE=8 -DRWORDSIZE=4 -DLWORDSIZE=4 -DNETCDF -DINTIO -DCONFIG_BUF_LEN=32768 -DMAX_DOMAINS_F=21 -DNMM_NEST=0 -DMAX_HISTORY=25"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -I. -I./inc -I./netcdf/include -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -Mbyteswapio -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI -DSPEC_AUTO_BYTEORDER=0x12345678  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument        -DSPEC_CASE_FLAG  -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI"
+P: BENCH_CFLAGS="-DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY="-DSPEC_CASE_FLAG"
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs  -Mbyteswapio  -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+/bin/sh: flang: command not found
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+FPP: "specpp -DSPEC -DNDEBUG -DDM_PARALLEL -DSTUBMPI -w -m literal.pm -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DEM_CORE=1 -DNMM_CORE=0 -DNMM_MAX_DIM=2600 -DCOAMPS_CORE=0 -DDA_CORE=0 -DEXP_CORE=0 -DIWORDSIZE=4 -DDWORDSIZE=8 -DRWORDSIZE=4 -DLWORDSIZE=4 -DNETCDF -DINTIO -DCONFIG_BUF_LEN=32768 -DMAX_DOMAINS_F=21 -DNMM_NEST=0 -DMAX_HISTORY=25 -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DDM_PARALLEL -DSTUBMPI"
+P: BENCH_FPPFLAGS="-w -m literal.pm -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DEM_CORE=1 -DNMM_CORE=0 -DNMM_MAX_DIM=2600 -DCOAMPS_CORE=0 -DDA_CORE=0 -DEXP_CORE=0 -DIWORDSIZE=4 -DDWORDSIZE=8 -DRWORDSIZE=4 -DLWORDSIZE=4 -DNETCDF -DINTIO -DCONFIG_BUF_LEN=32768 -DMAX_DOMAINS_F=21 -DNMM_NEST=0 -DMAX_HISTORY=25"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -I. -I./inc -I./netcdf/include -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -Mbyteswapio -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI -DSPEC_AUTO_BYTEORDER=0x12345678  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument        -DSPEC_CASE_FLAG  -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I. -I./inc -I./netcdf/include -DDM_PARALLEL -DSTUBMPI"
+P: BENCH_CFLAGS="-DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY="-DSPEC_CASE_FLAG"
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs  -Mbyteswapio  -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+/bin/sh: flang: command not found
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 621.wrf_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -w -DHIDE_MPI -D_MPISERIAL -DNO_MPI2 -DSPEC_CASE_FLAG -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FPPFLAGS="-DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -w -DHIDE_MPI -D_MPISERIAL -DNO_MPI2"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -I. -Iinclude -Inetcdf/include -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-I. -Iinclude -Inetcdf/include"
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG  -DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -DSPEC_AUTO_BYTEORDER=0x12345678  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument       -DSPEC_CASE_FLAG   -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs -DSPEC_CASE_FLAG   -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+/bin/sh: flang: command not found
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+COMP: "flang   -m64 -c -o options.o -I. -Iinclude -Inetcdf/include -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-I. -Iinclude -Inetcdf/include"
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG  -DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -DSPEC_AUTO_BYTEORDER=0x12345678  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument       -DSPEC_CASE_FLAG   -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-DNO_SHR_VMATH -DCO2A -DPERGRO -DPLON=144 -DPLAT=96 -DPLEV=26 -DPCNST=3 -DPCOLS=4 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSTAGGERED -D_NETCDF -DNO_R16 -I. -Iinclude -Inetcdf/include -DUSE_COSP -DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs -DSPEC_CASE_FLAG   -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+P: PORTABILITY="-DSPEC_CASE_FLAG"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+/bin/sh: flang: command not found
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 627.cam4_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -w -I. -Inetcdf/include -D_MPISERIAL -D_NETCDF -D_USEBOX -DCCSMCOUPLED=1 -DNO_SHR_VMATH -DBLCKX=50 -DBLCKY=4 -DMXBLCKS=58 -DNO_GETTIMEOFDAY -DSPEC_AUTO_BYTEORDER=0x12345678 -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FPPFLAGS="-w -I. -Inetcdf/include -D_MPISERIAL -D_NETCDF -D_USEBOX -DCCSMCOUPLED=1 -DNO_SHR_VMATH -DBLCKX=50 -DBLCKY=4 -DMXBLCKS=58 -DNO_GETTIMEOFDAY -DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -Mbyteswapio -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG  -I. -Inetcdf/include -D_MPISERIAL -D_NETCDF -D_USEBOX -DCCSMCOUPLED=1 -DNO_SHR_VMATH -DBLCKX=50 -DBLCKY=4 -DMXBLCKS=58 -DNO_GETTIMEOFDAY  -DSPEC_AUTO_BYTEORDER=0x12345678  -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument        -DSPEC_CASE_FLAG  -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-I. -Inetcdf/include -D_MPISERIAL -D_NETCDF -D_USEBOX -DCCSMCOUPLED=1 -DNO_SHR_VMATH -DBLCKX=50 -DBLCKY=4 -DMXBLCKS=58 -DNO_GETTIMEOFDAY  -DSPEC_AUTO_BYTEORDER=0x12345678"
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY="-DSPEC_CASE_FLAG"
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs  -Mbyteswapio  -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+P: FPORTABILITY="-Mbyteswapio"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+/bin/sh: flang: command not found
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 628.pop2_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -I.   -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I."
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "clang   -m64   -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang   -m64"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CC_VERSION_OPTION:
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -I.   -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I."
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "clang   -m64   -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang   -m64"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CC_VERSION_OPTION:
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 638.imagick_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -Ispecrand -Iregex-alpha -DNDEBUG -DNOPERFLIB -DNOREDUCE   -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-Ispecrand -Iregex-alpha -DNDEBUG -DNOPERFLIB -DNOREDUCE"
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "clang   -m64   -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang   -m64"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CC_VERSION_OPTION:
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 644.nab_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -I. -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-I."
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+/bin/sh: flang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 649.fotonik3d_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY -DSPEC_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FPPFLAGS="-w -m literal-single.pm -m c-comment.pm -I. -DBENCHMARK -DNestedGrids=1 -DNO_GETTIMEOFDAY"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "flang   -m64 -c -o options.o -I. -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order -fopenmp -Wno-return-type <source>"
+C: FC="flang   -m64"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-I."
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "flang   -m64  -Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="flang   -m64"
+O: LDFFLAGS="-Wl,-mllvm -Wl,-enable-X86-prefetching -Wl,-mllvm -Wl,-enable-licm-vrp"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: FOPTIMIZE="-Hz,1,0x1 -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -Mrecursive -mllvm -fuse-tile-inner-loop -funroll-loops -mllvm -extra-vectorizer-passes -mllvm -lsr-in-nested-loop -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -mllvm -global-vectorize-slp=true -Wno-unused-command-line-argument -mllvm -enable-loopinterchange -mllvm -compute-interchange-order"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+/bin/sh: flang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 654.roms_s base amd_speed_aocc320_milanx_A
+------------------------------------------------------------------------
+COMP: "clang   -m64 -c -o options.o -DSPEC -DNDEBUG -Ispecrand-common   -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument          -DSPEC_OPENMP -fopenmp -Wno-return-type    -DSPEC_LP64  <source>"
+C: CC="clang   -m64"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-Ispecrand-common"
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+LINK: "clang   -m64   -Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3    -O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument   -z muldefs    -DSPEC_OPENMP -fopenmp -Wno-return-type  <objects>        -fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm    -o options  "
+C: LD="clang   -m64"
+O: EXTRA_LDFLAGS="-Wl,-mllvm -Wl,-region-vectorize -Wl,-mllvm -Wl,-function-specialize -Wl,-mllvm -Wl,-align-all-nofallthru-blocks=6 -Wl,-mllvm -Wl,-reduce-array-computations=3"
+O: COPTIMIZE="-O3 -march=znver3 -fveclib=AMDLIBM -ffast-math -fopenmp -flto -fstruct-layout=5 -mllvm -unroll-threshold=50 -mllvm -inline-threshold=1000 -fremap-arrays -mllvm -function-specialize -flv-function-specialization -mllvm -enable-gvn-hoist -mllvm -global-vectorize-slp=true -mllvm -enable-licm-vrp -mllvm -reduce-array-computations=3 -Wno-unused-command-line-argument"
+O: LDOPTIMIZE="-z muldefs"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -fopenmp -Wno-return-type"
+O: EXTRA_LIBS="-fopenmp=libomp -lomp -lamdlibm -ljemalloc -lflang -lm"
+C: LDOUT="-o options"
+ CC_VERSION_OPTION:
+/bin/sh: clang: command not found
+specmake: [/home/amd/SPECcpu2017/benchspec/Makefile.defaults:502: compiler-version] Error 127 (ignored)
+  Up to date 996.specrand_fs base amd_speed_aocc320_milanx_A
+
+
+Setting Up Run Directories
+  Setting up 603.bwaves_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:26:53 (1747758413.40742)
+Stop command: 2025-05-20 12:26:53 (1747758413.59025)
+Elapsed time for command: 00:00:00 (0.182827949523926)
+  Setting up 607.cactuBSSN_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:26:53 (1747758413.68722)
+Stop command: 2025-05-20 12:26:53 (1747758413.86747)
+Elapsed time for command: 00:00:00 (0.180252075195312)
+  Setting up 619.lbm_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:26:53 (1747758413.96804)
+Stop command: 2025-05-20 12:26:54 (1747758414.15465)
+Elapsed time for command: 00:00:00 (0.186605930328369)
+  Setting up 621.wrf_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:26:54 (1747758414.89755)
+Stop command: 2025-05-20 12:26:55 (1747758415.27195)
+Elapsed time for command: 00:00:00 (0.374396085739136)
+  Setting up 627.cam4_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:26:57 (1747758417.03252)
+Stop command: 2025-05-20 12:26:57 (1747758417.81457)
+Elapsed time for command: 00:00:00 (0.782058954238892)
+  Setting up 628.pop2_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:00 (1747758420.96452)
+Stop command: 2025-05-20 12:27:02 (1747758422.09621)
+Elapsed time for command: 00:00:01 (1.1316921710968)
+  Setting up 638.imagick_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:02 (1747758422.21486)
+Stop command: 2025-05-20 12:27:02 (1747758422.40537)
+Elapsed time for command: 00:00:00 (0.190515995025635)
+  Setting up 644.nab_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:02 (1747758422.60648)
+Stop command: 2025-05-20 12:27:02 (1747758422.83026)
+Elapsed time for command: 00:00:00 (0.223771095275879)
+  Setting up 649.fotonik3d_s refspeed (ref) base amd_speed_aocc320_milanx_A: OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f inputgen.cmd -e inputgen.err -o inputgen.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f inputgen.cmd -e inputgen.err -o inputgen.stdout
+Start command: 2025-05-20 12:27:03 (1747758423.11115)
+Stop command: 2025-05-20 12:27:04 (1747758424.20523)
+Elapsed time for command: 00:00:01 (1.09407615661621)
+Input generation total elapsed time = 1 seconds
+Input generation elapsed time (0:1) = 0.92835 seconds
+run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:06 (1747758426.0364)
+Stop command: 2025-05-20 12:27:07 (1747758427.24425)
+Elapsed time for command: 00:00:01 (1.20784115791321)
+  Setting up 654.roms_s refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:07 (1747758427.30255)
+Stop command: 2025-05-20 12:27:07 (1747758427.47303)
+Elapsed time for command: 00:00:00 (0.17048192024231)
+  Setting up 996.specrand_fs refspeed (ref) base amd_speed_aocc320_milanx_A: run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+Issuing command 'sync'
+sync
+Start command: 2025-05-20 12:27:07 (1747758427.51603)
+Stop command: 2025-05-20 12:27:07 (1747758427.68241)
+Elapsed time for command: 00:00:00 (0.166378021240234)
+-----------------------------------
+Running Benchmarks
+-----------------------------------
+  Running 603.bwaves_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:27:07]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -i bwaves_1.in -o bwaves_1.out -e bwaves_1.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/speed_bwaves_base.amd_speed_aocc320_milanx_A bwaves_1 < bwaves_1.in > bwaves_1.out 2>> bwaves_1.err (timed)
+    -i bwaves_2.in -o bwaves_2.out -e bwaves_2.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/speed_bwaves_base.amd_speed_aocc320_milanx_A bwaves_2 < bwaves_2.in > bwaves_2.out 2>> bwaves_2.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='bwaves_s' benchnum='603' benchmark='603.bwaves_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:27:08 (1747758428.07305)
+Stop command: 2025-05-20 12:30:25 (1747758625.40588)
+Elapsed time for command: 00:03:17 (197.33283495903)
+Workload elapsed time (copy 0 workload 1) = 100.63511 seconds
+Workload elapsed time (copy 0 workload 2) = 96.484567 seconds
+Copy 0 of 603.bwaves_s (base refspeed) run 1 finished at 2025-05-20 12:30:25.  Total elapsed time: 197.119677
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'bwaves_1.out' with abstol=1e-16, reltol=0.015
+comparing 'bwaves_2.out' with abstol=1e-16, reltol=0.015
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/603.bwaves_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:30:25 (1747758625.50607)
+Stop command: 2025-05-20 12:30:25 (1747758625.98367)
+Elapsed time for command: 00:00:00 (0.477602958679199)
+Benchmark Times:
+  Run Start:    2025-05-20 12:27:08 (1747758428)
+  Run Stop:     2025-05-20 12:30:25 (1747758625)
+  Run Elapsed:  00:03:17 (197)
+  Run Reported: 00:03:17 (197 119974000 197.119974)
+ Success 603.bwaves_s base refspeed ratio=299.30, runtime=197.119974, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 607.cactuBSSN_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:30:26]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o spec_ref.out -e spec_ref.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/cactuBSSN_s_base.amd_speed_aocc320_milanx_A spec_ref.par   > spec_ref.out 2>> spec_ref.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cactuBSSN_s' benchnum='607' benchmark='607.cactuBSSN_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:30:26 (1747758626.37231)
+Stop command: 2025-05-20 12:32:16 (1747758736.90016)
+Elapsed time for command: 00:01:50 (110.527843952179)
+Workload elapsed time (copy 0 workload 1) = 110.316629 seconds
+Copy 0 of 607.cactuBSSN_s (base refspeed) run 1 finished at 2025-05-20 12:32:16.  Total elapsed time: 110.316629
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'gxx.xl' with abstol=5e-13, floatcompare=1
+comparing 'gxy.xl' with abstol=5e-13, floatcompare=1
+comparing 'spec_ref.out' with floatcompare=1
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:32:16 (1747758736.99244)
+Stop command: 2025-05-20 12:32:17 (1747758737.9041)
+Elapsed time for command: 00:00:00 (0.911657094955444)
+Benchmark Times:
+  Run Start:    2025-05-20 12:30:26 (1747758626)
+  Run Stop:     2025-05-20 12:32:16 (1747758736)
+  Run Elapsed:  00:01:50 (110)
+  Run Reported: 00:01:50 (110 316797000 110.316797)
+ Success 607.cactuBSSN_s base refspeed ratio=151.11, runtime=110.316797, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 619.lbm_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:32:17]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o lbm.out -e lbm.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/lbm_s_base.amd_speed_aocc320_milanx_A 2000 reference.dat 0 0 200_200_260_ldc.of > lbm.out 2>> lbm.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='lbm_s' benchnum='619' benchmark='619.lbm_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:32:18 (1747758738.20089)
+Stop command: 2025-05-20 12:33:56 (1747758836.45235)
+Elapsed time for command: 00:01:38 (98.2514600753784)
+Workload elapsed time (copy 0 workload 1) = 98.036518 seconds
+Copy 0 of 619.lbm_s (base refspeed) run 1 finished at 2025-05-20 12:33:56.  Total elapsed time: 98.036518
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'lbm.out' with abstol=1e-07
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/619.lbm_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:33:56 (1747758836.55297)
+Stop command: 2025-05-20 12:33:56 (1747758836.88036)
+Elapsed time for command: 00:00:00 (0.327385187149048)
+Benchmark Times:
+  Run Start:    2025-05-20 12:32:18 (1747758738)
+  Run Stop:     2025-05-20 12:33:56 (1747758836)
+  Run Elapsed:  00:01:38 (98)
+  Run Reported: 00:01:38 (98 36699000 98.036699)
+ Success 619.lbm_s base refspeed ratio=53.43, runtime=98.036699, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 621.wrf_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:33:57]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o rsl.out.0000 -e wrf.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/wrf_s_base.amd_speed_aocc320_milanx_A > rsl.out.0000 2>> wrf.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='wrf_s' benchnum='621' benchmark='621.wrf_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:33:57 (1747758837.61902)
+Stop command: 2025-05-20 12:37:13 (1747759033.63085)
+Elapsed time for command: 00:03:16 (196.011823177338)
+Workload elapsed time (copy 0 workload 1) = 195.80409 seconds
+Copy 0 of 621.wrf_s (base refspeed) run 1 finished at 2025-05-20 12:37:13.  Total elapsed time: 195.80409
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'diffwrf_output_01.txt' with cw=1
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/621.wrf_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:37:13 (1747759033.73046)
+Stop command: 2025-05-20 12:37:14 (1747759034.31156)
+Elapsed time for command: 00:00:00 (0.581104040145874)
+Benchmark Times:
+  Run Start:    2025-05-20 12:33:57 (1747758837)
+  Run Stop:     2025-05-20 12:37:13 (1747759033)
+  Run Elapsed:  00:03:16 (196)
+  Run Reported: 00:03:15 (195 804228000 195.804228)
+ Success 621.wrf_s base refspeed ratio=67.55, runtime=195.804228, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 627.cam4_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:37:14]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o cam4_s_base.amd_speed_aocc320_milanx_A.txt -e cam4_s_base.amd_speed_aocc320_milanx_A.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/cam4_s_base.amd_speed_aocc320_milanx_A > cam4_s_base.amd_speed_aocc320_milanx_A.txt 2>> cam4_s_base.amd_speed_aocc320_milanx_A.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='cam4_s' benchnum='627' benchmark='627.cam4_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:37:14 (1747759034.74835)
+Stop command: 2025-05-20 12:39:51 (1747759191.97806)
+Elapsed time for command: 00:02:37 (157.229702949524)
+Workload elapsed time (copy 0 workload 1) = 157.017536 seconds
+Copy 0 of 627.cam4_s (base refspeed) run 1 finished at 2025-05-20 12:39:51.  Total elapsed time: 157.017536
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'cam4_validate.txt' with cw=1
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/627.cam4_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:39:52 (1747759192.07979)
+Stop command: 2025-05-20 12:39:52 (1747759192.45297)
+Elapsed time for command: 00:00:00 (0.373179912567139)
+Benchmark Times:
+  Run Start:    2025-05-20 12:37:14 (1747759034)
+  Run Stop:     2025-05-20 12:39:51 (1747759191)
+  Run Elapsed:  00:02:37 (157)
+  Run Reported: 00:02:37 (157 17711000 157.017711)
+ Success 627.cam4_s base refspeed ratio=56.45, runtime=157.017711, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 628.pop2_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:39:54]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o pop2_s.out -e pop2_s.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/speed_pop2_base.amd_speed_aocc320_milanx_A > pop2_s.out 2>> pop2_s.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='pop2_s' benchnum='628' benchmark='628.pop2_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:39:54 (1747759194.39882)
+Stop command: 2025-05-20 12:46:43 (1747759603.3137)
+Elapsed time for command: 00:06:48 (408.914880037308)
+Workload elapsed time (copy 0 workload 1) = 408.706071 seconds
+Copy 0 of 628.pop2_s (base refspeed) run 1 finished at 2025-05-20 12:46:43.  Total elapsed time: 408.706071
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'ocn.log' with abstol=0.03, reltol=0.03
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/628.pop2_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:46:43 (1747759603.40181)
+Stop command: 2025-05-20 12:46:43 (1747759603.82176)
+Elapsed time for command: 00:00:00 (0.419950008392334)
+Benchmark Times:
+  Run Start:    2025-05-20 12:39:54 (1747759194)
+  Run Stop:     2025-05-20 12:46:43 (1747759603)
+  Run Elapsed:  00:06:49 (409)
+  Run Reported: 00:06:48 (408 706269000 408.706269)
+ Success 628.pop2_s base refspeed ratio=29.05, runtime=408.706269, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 638.imagick_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:46:43]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o refspeed_convert.out -e refspeed_convert.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/imagick_s_base.amd_speed_aocc320_milanx_A -limit disk 0 refspeed_input.tga -resize 817% -rotate -2.76 -shave 540x375 -alpha remove -auto-level -contrast-stretch 1x1% -colorspace Lab -channel R -equalize +channel -colorspace sRGB -define histogram:unique-colors=false -adaptive-blur 0x5 -despeckle -auto-gamma -adaptive-sharpen 55 -enhance -brightness-contrast 10x10 -resize 30% refspeed_output.tga > refspeed_convert.out 2>> refspeed_convert.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='imagick_s' benchnum='638' benchmark='638.imagick_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:46:44 (1747759604.14128)
+Stop command: 2025-05-20 12:48:59 (1747759739.50072)
+Elapsed time for command: 00:02:15 (135.359439134598)
+Workload elapsed time (copy 0 workload 1) = 135.144622 seconds
+Copy 0 of 638.imagick_s (base refspeed) run 1 finished at 2025-05-20 12:48:59.  Total elapsed time: 135.144622
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'refspeed_validate.out' with reltol=0.01
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/638.imagick_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:48:59 (1747759739.59185)
+Stop command: 2025-05-20 12:49:00 (1747759740.37936)
+Elapsed time for command: 00:00:00 (0.787505865097046)
+Benchmark Times:
+  Run Start:    2025-05-20 12:46:44 (1747759604)
+  Run Stop:     2025-05-20 12:48:59 (1747759739)
+  Run Elapsed:  00:02:15 (135)
+  Run Reported: 00:02:15 (135 144808000 135.144808)
+ Success 638.imagick_s base refspeed ratio=106.74, runtime=135.144808, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 644.nab_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:49:00]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o 3j1n.out -e 3j1n.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/nab_s_base.amd_speed_aocc320_milanx_A 3j1n 20140317 220 > 3j1n.out 2>> 3j1n.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='nab_s' benchnum='644' benchmark='644.nab_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:49:00 (1747759740.67529)
+Stop command: 2025-05-20 12:50:53 (1747759853.69499)
+Elapsed time for command: 00:01:53 (113.019703149796)
+Workload elapsed time (copy 0 workload 1) = 112.812354 seconds
+Copy 0 of 644.nab_s (base refspeed) run 1 finished at 2025-05-20 12:50:53.  Total elapsed time: 112.812354
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing '3j1n.out' with reltol=0.01, skipreltol=2
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/644.nab_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:50:53 (1747759853.79145)
+Stop command: 2025-05-20 12:50:54 (1747759854.10898)
+Elapsed time for command: 00:00:00 (0.317529916763306)
+Benchmark Times:
+  Run Start:    2025-05-20 12:49:00 (1747759740)
+  Run Stop:     2025-05-20 12:50:53 (1747759853)
+  Run Elapsed:  00:01:53 (113)
+  Run Reported: 00:01:52 (112 812524000 112.812524)
+ Success 644.nab_s base refspeed ratio=154.88, runtime=112.812524, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 649.fotonik3d_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:50:54]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o fotonik3d_s.log -e fotonik3d_s.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/fotonik3d_s_base.amd_speed_aocc320_milanx_A > fotonik3d_s.log 2>> fotonik3d_s.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='fotonik3d_s' benchnum='649' benchmark='649.fotonik3d_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:50:54 (1747759854.42286)
+Stop command: 2025-05-20 12:54:22 (1747760062.70553)
+Elapsed time for command: 00:03:28 (208.282665014267)
+Workload elapsed time (copy 0 workload 1) = 208.072766 seconds
+Copy 0 of 649.fotonik3d_s (base refspeed) run 1 finished at 2025-05-20 12:54:22.  Total elapsed time: 208.072766
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'pscyee.out' with abstol=1e-27, floatcompare=1, obiwan=1, reltol=1e-10
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:54:22 (1747760062.7994)
+Stop command: 2025-05-20 12:54:23 (1747760063.42497)
+Elapsed time for command: 00:00:00 (0.625576972961426)
+Benchmark Times:
+  Run Start:    2025-05-20 12:50:54 (1747759854)
+  Run Stop:     2025-05-20 12:54:22 (1747760062)
+  Run Elapsed:  00:03:28 (208)
+  Run Reported: 00:03:28 (208 72967000 208.072967)
+ Success 649.fotonik3d_s base refspeed ratio=43.81, runtime=208.072967, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 654.roms_s refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:54:23]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+roms_s: Prerun decomposition for 32 threads: NtileI=4 NtileJ=32
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -i ocean_benchmark3.in -o ocean_benchmark3.log -e ocean_benchmark3.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/sroms_base.amd_speed_aocc320_milanx_A < ocean_benchmark3.in > ocean_benchmark3.log 2>> ocean_benchmark3.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='roms_s' benchnum='654' benchmark='654.roms_s' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:54:23 (1747760063.73901)
+Stop command: 2025-05-20 12:57:12 (1747760232.48329)
+Elapsed time for command: 00:02:48 (168.744274139404)
+Workload elapsed time (copy 0 workload 1) = 168.529845 seconds
+Copy 0 of 654.roms_s (base refspeed) run 1 finished at 2025-05-20 12:57:12.  Total elapsed time: 168.529845
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'ocean_benchmark3.log' with abstol=1e-07, reltol=1e-07
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/654.roms_s/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:57:12 (1747760232.57972)
+Stop command: 2025-05-20 12:57:12 (1747760232.90569)
+Elapsed time for command: 00:00:00 (0.325970888137817)
+Benchmark Times:
+  Run Start:    2025-05-20 12:54:23 (1747760063)
+  Run Stop:     2025-05-20 12:57:12 (1747760232)
+  Run Elapsed:  00:02:49 (169)
+  Run Reported: 00:02:48 (168 530025000 168.530025)
+ Success 654.roms_s base refspeed ratio=93.43, runtime=168.530025, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 996.specrand_fs refspeed (ref) base amd_speed_aocc320_milanx_A threads:32 [2025-05-20 12:57:12]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -b numactl --physcpubind=0-31
+    -C /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000
+    -o rand.234923.out -e rand.234923.err echo always > /sys/kernel/mm/transparent_hugepage/enabled; $BIND ../run_base_refspeed_amd_speed_aocc320_milanx_A.0000/specrand_fs_base.amd_speed_aocc320_milanx_A 1255432124 234923 > rand.234923.out 2>> rand.234923.err (timed)
+Specinvoke: /home/amd/SPECcpu2017/data-collection/data-collection start benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Issuing command '/home/amd/SPECcpu2017/data-collection/data-collection start benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2''
+/home/amd/SPECcpu2017/data-collection/data-collection start benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2' ; /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout ; /home/amd/SPECcpu2017/data-collection/data-collection stop benchname='specrand_fs' benchnum='996' benchmark='996.specrand_fs' iteration=0 size='refspeed' tune='base' label='amd_speed_aocc320_milanx_A' log='CPU2017' lognum='005.0' from_runcpu='2'
+Start command: 2025-05-20 12:57:13 (1747760233.18384)
+Stop command: 2025-05-20 12:57:13 (1747760233.5084)
+Elapsed time for command: 00:00:00 (0.324557065963745)
+Workload elapsed time (copy 0 workload 1) = 0.113434 seconds
+Copy 0 of 996.specrand_fs (base refspeed) run 1 finished at 2025-05-20 12:57:13.  Total elapsed time: 0.113434
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '32'
+	OMP_THREAD_LIMIT	=> '64'
+	OMP_STACKSIZE	=> '128M'
+	OMP_SCHEDULE	=> 'static'
+	OMP_DYNAMIC	=> 'false'
+Pre-run environment changes:
+	'GOMP_CPU_AFFINITY' changed: (value now '0-31') [user supplied]
+	'OMP_NUM_THREADS' added: (value now '32')
+comparing 'rand.234923.out' with floatcompare=1, nansupport=0
+Specinvoke: /home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/home/amd/SPECcpu2017/bin/specinvoke -d /home/amd/SPECcpu2017/benchspec/CPU/996.specrand_fs/run/run_base_refspeed_amd_speed_aocc320_milanx_A.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2025-05-20 12:57:13 (1747760233.60693)
+Stop command: 2025-05-20 12:57:15 (1747760235.04913)
+Elapsed time for command: 00:00:01 (1.44219708442688)
+Benchmark Times:
+  Run Start:    2025-05-20 12:57:13 (1747760233)
+  Run Stop:     2025-05-20 12:57:13 (1747760233)
+  Run Elapsed:  00:00:00 (0)
+  Run Reported: 00:00:00 (0 113566000 0.113566)
+ Success 996.specrand_fs base refspeed ratio=88.05, runtime=0.113566, copies=1, threads=32, power=0.00W, temp=0.00 degC, humidity=0.00%
+Success: 1x603.bwaves_s 1x607.cactuBSSN_s 1x619.lbm_s 1x621.wrf_s 1x627.cam4_s 1x628.pop2_s 1x638.imagick_s 1x644.nab_s 1x649.fotonik3d_s 1x654.roms_s 1x996.specrand_fs
+Producing Raw Reports
+ label: amd_speed_aocc320_milanx_A
+  workload: refspeed (ref)
+   benchset: intspeed
+   benchset: intrate
+   benchset: fpspeed
+   metric: SPECspeed2017_fp_base
+    format: raw -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.rsf
+Parsing flags for 603.bwaves_s base: done
+Parsing flags for 607.cactuBSSN_s base: done
+Parsing flags for 619.lbm_s base: done
+Parsing flags for 621.wrf_s base: done
+Parsing flags for 627.cam4_s base: done
+Parsing flags for 628.pop2_s base: done
+Parsing flags for 638.imagick_s base: done
+Parsing flags for 644.nab_s base: done
+Parsing flags for 649.fotonik3d_s base: done
+Parsing flags for 654.roms_s base: done
+Doing flag reduction: done
+    format: flags -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.flags.html
+    format: cfg -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.cfg
+    format: CSV -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.csv
+    format: PDF -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.pdf
+    format: HTML -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.html
+    format: PostScript -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.ps
+    format: Text -> /home/amd/SPECcpu2017/result/CPU2017.005.fpspeed.refspeed.txt
+   benchset: fprate
+runcpu finished at 2025-05-20 12:57:28; 1847 total seconds elapsed
+Info: file_tail(109264): file '/home/amd/SPECcpu2017/tmp/CPU2017.005/templogs/preenv.fpspeed.005.0.log.debug' was removed and will no longer be followed.  No action is required.
+The log for this run is in /home/amd/SPECcpu2017/result/CPU2017.005.log
+
+runcpu finished at 2025-05-20 12:57:28; 1848 total seconds elapsed

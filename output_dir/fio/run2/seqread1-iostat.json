@@ -1,0 +1,12 @@
+[
+  {
+    "IOPS": null,
+    "read": {
+      "BW": 460928
+    },
+    "write": null,
+    "lat": {
+      "avg": 0.27
+    }
+  }
+]

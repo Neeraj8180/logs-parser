@@ -1,0 +1,16 @@
+[
+  {
+    "copy": {
+      "best_rate_MBps": 58491.8
+    },
+    "scale": {
+      "best_rate_MBps": 80139.9
+    },
+    "add": {
+      "best_rate_MBps": 80582.5
+    },
+    "triad": {
+      "best_rate_MBps": 79860.2
+    }
+  }
+]

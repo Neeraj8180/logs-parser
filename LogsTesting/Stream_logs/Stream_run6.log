@@ -1,0 +1,43 @@
+Using OS page size of 4KB
+Array size multiple (elements) = 512
+Per-CPU work size (elements) = 1250304
+Rounding up array size to 10002432
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 10002432 (elements), Offset = 0 (elements)
+Memory per array = 76.3 MiB (= 0.1 GiB).
+Total memory required = 228.9 MiB (= 0.2 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 8
+Number of Threads counted = 8
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 1692 microseconds.
+   (= 1692 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Krnl/Loop    0    1    2    3    4    5    6    7
+Triad   6 12.1 12.0 12.0 12.0 12.0 12.1 12.1 12.2
+Triad   7 12.1 12.0 12.0 12.0 12.0 12.2 12.3 12.1
+Triad   8 12.1 12.0 12.0 12.0 12.0 12.2 12.2 12.1
+Triad   9 12.1 11.9 12.0 12.0 12.0 12.1 12.0 12.1
+Triad  10 12.0 12.0 12.0 12.0 12.0 12.1 12.0 12.2
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           91914.5     0.001749     0.001741     0.001759
+Scale:          92027.9     0.001756     0.001739     0.001801
+Add:            95874.9     0.002515     0.002504     0.002536
+Triad:          94845.3     0.002542     0.002531     0.002558
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------

@@ -14,6 +14,7 @@ from .Oracle_TPC_C import Oracle_TPC_C
 from .Oracle_TPC_H import RunMetrics
 from .TCP_RR import LatencyStats
 from .ffmpeg_schema import FFMPEGlog
+from .HPL_schema import HPLlog
 
 # Map log types to schema classes
 SCHEMA_MAP = {
@@ -32,4 +33,5 @@ SCHEMA_MAP = {
     "oracletpch": RunMetrics,
     "tcprr": LatencyStats,
     "ffmpeg": FFMPEGlog,
+    "hpl": HPLlog,
 }
