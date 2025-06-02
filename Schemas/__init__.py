@@ -15,6 +15,7 @@ from .Oracle_TPC_H import RunMetrics
 from .TCP_RR import LatencyStats
 from .ffmpeg_schema import FFMPEGlog
 from .HPL_schema import HPLlog
+from .Specjbb import Specjbblog
 
 # Map log types to schema classes
 SCHEMA_MAP = {
@@ -34,4 +35,5 @@ SCHEMA_MAP = {
     "tcprr": LatencyStats,
     "ffmpeg": FFMPEGlog,
     "hpl": HPLlog,
+    "specjbb": Specjbblog,
 }
