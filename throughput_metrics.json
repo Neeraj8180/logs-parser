@@ -1,0 +1,1041 @@
+{
+  "system_info": {
+    "rte_version": "22.11.0",
+    "platform": "w20241L3VqP9x2Hu",
+    "pmd_version": "25.04.2",
+    "other_config": "ACCL FPGA: [ 5SD-p16-249_m_hz_3SE-p128-324_m_hz_w20241L3VqP9x2Hu ]; ACCL: max queues : 32"
+  },
+  "resultsInfo": [
+    {
+      "run": 1,
+      "statistics": [
+        {
+          "DPDK-Test-BBDEV-Throughput": [
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_63000_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1049253.8
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_32768_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1047816.0
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_49152_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1047987.7
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_25344_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1049189.0
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD7016_K_prime_minus_L_7016_E_8568_BG_1_Q_m_8_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 3832489.4
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD680_K_prime_minus_L_680_E_800_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 11402.571
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD7016_K_prime_minus_L_7016_E_8144_BG_1_Q_m_8_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 4138843.9
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD616_K_prime_minus_L_616_E_960_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 10373.604
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD5608_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 2412.0161
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD3816_K_prime_minus_L_3816_E_5760_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 5824.479
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD5608_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 9348.7522
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD616_K_prime_minus_L_616_E_3200_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 6615.1064
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD296_K_prime_minus_L_296_E_480_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 5488.4887
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD2792_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 5586.5098
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD296_K_prime_minus_L_296_E_1600_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 4602.9069
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD3816_K_prime_minus_L_3816_E_19200_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 5914.1797
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD2536_K_prime_minus_L_2536_E_12800_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 3925319.8
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD1384_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 14434.137
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD1384_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 9056.9163
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD1256_K_prime_minus_L_1256_E_1920_BG_2_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 14447.899
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 3553819.5
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_65016_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1047169.5
+                }
+              ]
+            },
+            {
+              "ldpc_encode_LD8424_K_prime_minus_L_8424_E_80016_BG_1_Q_m_2_RM_on_CRC_24B": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Encode Throughput",
+                  "metricsValue": 1049426.8
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2536_K_prime_minus_L_2536_E_3840_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 3455211.4
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD296_K_prime_minus_L_296_E_1600_BG_2_Q_m_2_SNR_40.00_LLR_width_None": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 4080.0181
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD296_K_prime_minus_L_296_E_480_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 11609990.0
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD3816_K_prime_minus_L_3816_E_19200_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 401221.4
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1256_K_prime_minus_L_1256_E_6400_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1985815.3
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2536_K_prime_minus_L_2536_E_12800_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1044253.1
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1256_K_prime_minus_L_1256_E_1920_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 6132.301
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD8424_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1456206.8
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD680_K_prime_minus_L_680_E_2112_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2261420.1
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD8424_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1673814.3
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD680_K_prime_minus_L_680_E_800_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 9802.7234
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD680_K_prime_minus_L_680_E_800_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 9789.7211
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD5608_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2143889.1
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD680_K_prime_minus_L_680_E_2112_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2264894.2
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD5608_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2613820.5
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD5608_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 560537.59
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2792_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1436177.9
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD5608_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 560562.13
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2792_K_prime_minus_L_2792_E_3200_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 4063300.5
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2792_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1434124.7
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1384_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1954085.1
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD2792_K_prime_minus_L_2792_E_3200_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 4506.384
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1384_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 6860.6766
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1384_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_SNR_40.00_LLR_width_8": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 1954513.7
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD3816_K_prime_minus_L_3816_E_5760_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2115.1212
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD616_K_prime_minus_L_616_E_3200_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 2409230.8
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD616_K_prime_minus_L_616_E_960_BG_2_Q_m_2_SNR_40.00": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 9017.671
+                }
+              ]
+            },
+            {
+              "ldpc_decode_LD1384_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_SNR_40.00_LLR_width_6": [
+                {
+                  "metricsName": "Burst size",
+                  "metricsValue": 512
+                },
+                {
+                  "metricsName": "No_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "threads",
+                  "metricsValue": 16
+                },
+                {
+                  "metricsName": "Decode Throughput",
+                  "metricsValue": 7043.0612
+                }
+              ]
+            }
+          ],
+          "status": "OK"
+        }
+      ],
+      "summary": "Results for Run 1"
+    }
+  ]
+}

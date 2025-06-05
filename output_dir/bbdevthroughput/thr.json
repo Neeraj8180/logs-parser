@@ -1,0 +1,250 @@
+[
+  {
+    "DPDK_Test_BBDEV_Throughput": [
+      {
+        "Burst size": [
+          {
+            "metricsName": "Burst size",
+            "metricsValue": 512
+          }
+        ],
+        "No_ops": [
+          {
+            "metricsName": "No_ops",
+            "metricsValue": 1024
+          }
+        ],
+        "threads": [
+          {
+            "metricsName": "threads",
+            "metricsValue": 16
+          }
+        ],
+        "Decode Throughput": [
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 1540.6902
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 3715.197
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 1305.6058
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 8845.3411
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 2673.2878
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 2541.8435
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 7849.3441
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 12302.035
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 14140.384
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 6891.9636
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 6901.1173
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 1592.0397
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 1594.4855
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 12074.383
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 14721.037
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 3156.9477
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 3157.0859
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 4038.4953
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 4044.2769
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 11442.254
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 12689.977
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 2751.9553
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 2751.3518
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 9659.8327
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 9916.6302
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 5771.3094
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 1541.9077
+          },
+          {
+            "metricsName": "Decode Throughput",
+            "metricsValue": 8122.0653
+          }
+        ],
+        "Encode Throughput": [
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8864.0959
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8853.4003
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8851.9497
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8863.5483
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 26980.725
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 29137.461
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 11402.571
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 7812.5593
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 10373.604
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 6615.1064
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 52652.173
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 13584.475
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 22365.968
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 5914.1797
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 5488.4887
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 4602.9069
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 15731.612
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 34423.11
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 29902.607
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 10048.819
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 12752.138
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 20323.265
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 11641.789
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 18493.311
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 30022.667
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8865.5572
+          },
+          {
+            "metricsName": "Encode Throughput",
+            "metricsValue": 8846.4883
+          }
+        ]
+      }
+    ]
+  }
+]

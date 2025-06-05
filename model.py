@@ -15,7 +15,7 @@ dotenv.load_dotenv()
 os.environ["OPEN_AI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 OUTPUT_DIR = "output_dir"
-TOKEN_LIMIT = 128000  # GPT-4o supports up to ~128k tokens
+TOKEN_LIMIT = 127000  # GPT-4o supports up to ~128k tokens
 
 
 def normalize_log_type(log_type: str) -> str:
@@ -54,7 +54,7 @@ You are a helpful assistant. Summarize the following log chunk for metric extrac
 Log:
 {chunk}
 
-Only summarize what's relevant for extracting metrics like latency, throughput, performance, etc.
+Only summarize what's relevant for extracting metrics for example latency, throughput, performance, etc.
 """
     response = model.invoke([HumanMessage(content=prompt)])
     return response.content.strip()

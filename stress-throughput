@@ -1,0 +1,261 @@
+EAL: Detected CPU lcores: 128
+EAL: Detected NUMA nodes: 2
+EAL: RTE Version: 'DPDK 22.11.0'
+EAL: Detected static linkage of DPDK
+EAL: Multi-process socket /var/run/dpdk/rte/mp_socket
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: Using IOMMU type 1 (Type 1)
+EAL: Ignore mapping IO port bar(1)
+EAL: Ignore mapping IO port bar(3)
+EAL: Probe PCI driver: net_qdma (10ee:9048) device: 0000:89:00.0 (socket 1)
+Device Type: Soft IP
+IP Type: EQDMA5.0 Soft IP
+Vivado Release: vivado 2020.2
+PMD: QDMA PMD VERSION: 2023.2.1
+eqdma_set_perf_opt: reg = 0x00000250 val = 0x00502015
+eqdma_set_perf_opt: reg = 0x0000004C val = 0x00010009
+eqdma_set_perf_opt: reg = 0x00000B08 val = 0x01000100
+eqdma_set_perf_opt: reg = 0x00000A80 val = 0x003C003C
+eqdma_set_perf_opt: reg = 0x00000A84 val = 0x804003C8
+eqdma_set_perf_opt: reg = 0x00000A84 val = 0x00008000
+eqdma_set_perf_opt: reg = 0x00001484 val = 0x00800320
+eqdma_set_perf_opt: reg = 0x00001400 val = 0x00004010
+eqdma_set_perf_opt: reg = 0x00001404 val = 0x00380060
+eqdma_set_perf_opt: reg = 0x0000015C val = 0x06045000
+eqdma_set_perf_opt: reg = 0x00000160 val = 0x00000000
+eqdma_set_perf_opt: BF reg = 0x0000015C val = 0x06045000
+eqdma_set_perf_opt: reg = 0x00000158 val = 0x86045000
+eqdma_set_perf_opt: reg = 0x00000E24 val = 0x86046000
+eqdma_set_perf_opt: reg = 0x00000E2C val = 0x82044000
+eqdma_set_perf_opt: reg = 0x000012EC val = 0x00000000
+qdma_dev_entry_create: Created the dev entry successfully
+EAL: Probe PCI driver: net_qdma (10ee:9048) device: 0000:89:00.0 (socket 1)
+EAL: Probe PCI driver: baseband_accl_ldpc (10ee:9048) device: 0000:89:00.0 (socket 1)
+ACCL: PROBE : accl_ldpc_pci_probe : 89:00.0 , pci_drv 0x55db0c1752c0 pci_dev 0x55db2d91f7a0
+ACCL: 185:get_pci_information() ACCL : PCIe LinkSpeed 4 : Width 8
+------------------------------------------------------
+Platform String       : 'w20241L3VqP9x2Hu'
+Platform Tag          : 'AMD_T2_M2.2a'
+Platform Timestamp    : '2024-10-18 08:52:15 GMT'
+------------------------------------------------------
+Max Descriptor Size   : 16384
+Number PCIe lanes     : 11
+Device A Frequency    : 249.000 MHz
+Device B Frequency    : 324.000 MHz
+Device C Frequency    : 0.000 MHz
+Device D Frequency    : 0.000 MHz
+------------------------------------------------------
+Number of Connected Devices    : 2
+------------------------------------------------------
+Device[ 0 ]:
+________________________________________
+__DeviceDescription__
+deviceID          : 1
+deviceType        : SD_FEC_Decoder
+deviceVersion     : 2
+deviceParallelism : 16
+________________________________________
+__InstanceDescription__
+totalInstances    : 5
+activeInstances   : 5
+Device:0  Type: 7
+------------------------------------------------------
+Device[ 1 ]:
+________________________________________
+__DeviceDescription__
+deviceID          : 2
+deviceType        : SD_FEC_Encoder
+deviceVersion     : 2
+deviceParallelism : 128
+________________________________________
+__InstanceDescription__
+totalInstances    : 3
+activeInstances   : 3
+Device:1  Type: 6
+------------------------------------------------------
+ACCL FPGA:[ 5SD-p16-249_m_hz_3SE-p128-324_m_hz_w20241L3VqP9x2Hu ]
+ACCL: max queues : 32
+ACCL: ACCL BBDEV PMD : [25.04.2]
+TELEMETRY: No legacy callbacks, legacy socket not created
+ACCL: accl_setup_queues: 89:00.0, num_queues 32, socket_id 1, port 0
+ACCL: alloc resources: qid 0, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 0, port 0, hw_queue_id 16, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 1, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 1, port 0, hw_queue_id 0, op_type RTE_BBDEV_OP_LDPC_DEC, with ID ranges 0 - 1021 (1022)
+ACCL: accl_ldpc_start: 89:00.0, port 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+QDMA eth_qdma_pci_probe : force exit
+
+
+ Config File: (config/bbdev-sq.conf)
+
+generic_entries: 7
+Generic: index 0, name (encode_queues) value (1)
+Generic: index 1, name (decode_queues) value (1)
+Generic: index 2, name (dequeue_threads) value (1)
+Generic: index 3, name (iter) value (10000)
+Generic: index 4, name (time_out) value (10)
+Generic: index 5, name (burst_size) value (1000)
+Generic: index 6, name (nb_ops) value (1024)
+enc_entries: 1
+dec_entries: 1
+Queues: enc 1, dec 1
+Deq: threads 1
+ENC-Q-0, file (vector_file/encode/ldpc_enc_K_prime_minus_L_8424_E_25344_BG_1_Q_m_2_RM_on_CRC_24B.data)
+DEC-Q-0, file (vector_file/decode/ldpc_dec_LD350_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data)
+------
+socket Id: 1
+Device Name: 89:00.0
+max num_queues: 32
+started: 0
+driver name  : baseband_accl_ldpc
+queue_size limit  : 1024
+hardware_accelerated  : 1
+max_ul_queue_priority  : 0
+max_dl_queue_priority  : 0
+queue_intr_supported : 0
+harq_buffer_size: 524288
+min_alignment: 64
+queue_size: 1024
+socket: 1
+op_type: 0
+------
+timer_cb() on lcore 8; count_timer_expire 0, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 1, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 2, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 3, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 4, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 5, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 6, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 7, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 8, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 9, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 10, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 11, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 12, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 13, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 14, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 15, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 16, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 17, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 18, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 19, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 20, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 21, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 22, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 23, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 24, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 25, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 26, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 27, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 28, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 29, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 30, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 31, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 32, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 33, config_param.time_out 10 global_exit_flag 0
+timer_cb()No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+ on lcore 8; count_timer_expire 34, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 35, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 36, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 37, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 38, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 39, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 40, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 41, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 42, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 43, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 44, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 45, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 46, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 47, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 48, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 49, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 50, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 51, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 52, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 53, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 54, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 55, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 56, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 57, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 58, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 59, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 60, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 61, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 62, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 63, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 64, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 65, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 66, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 67, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 68, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 69, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 70, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 71, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 72, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 73, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 74, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 75, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 76, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 77, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 78, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 79, config_parNo error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+am.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 80, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 81, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 82, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 83, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 84, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 85, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 86, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 87, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 88, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 89, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 90, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 91, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 92, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 93, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 94, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 95, config_param.time_out 10 global_exit_flag 0
+timer_cb() on lcore 8; count_timer_expire 96, config_param.time_out 10 global_exit_flag 0
+
+
+
+SUCCESS .................................................
+
+
+timer_cb() on lcore 8; count_timer_expire 97, config_param.time_out 10 global_exit_flag 1
+count: enq 20480000, deq 20480000 
+err count: enq 578510285, deq 0 
+war count: enq 0, deq 0 
+-----------------------------------
+encode Queue:   0, cycles  18590808650, enq count     10240000, deq count     10240000 input Pktlen:  1053, Throughput: 12.064057; Output Pktlen:  3168; Throguhput: 36.295283 
+decode Queue:   1, cycles  18589372108, enq count     10240000, deq count     10240000 input Pktlen:  9600, Throughput: 109.994205; Output Pktlen:  1053; Throguhput: 12.064989 
+
+
+ ------------------------------------------- 
+Encode Throughput, in: 12.064057Gbps, out: 36.295283Gbps
+Decode Throughput, in: 109.994205Gbps, out: 12.064989Gbps
+
+Encode+Decode Ingress Throughput: 122.058262Gbps
+Encode+Decode Egress Throughput: 48.360272Gbps
+ACCL: rte_eth_dev_stop: 89:00.0, port 0
+ACCL: accl_ldpc_close: 89:00.0, port 0
+Device with port_id=0 already stopped

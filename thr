@@ -1,0 +1,2044 @@
+EAL: Detected CPU lcores: 128
+EAL: Detected NUMA nodes: 2
+EAL: RTE Version: 'DPDK 22.11.0'
+EAL: Detected static linkage of DPDK
+EAL: Multi-process socket /var/run/dpdk/rte/mp_socket
+EAL: Selected IOVA mode 'VA'
+EAL: VFIO support initialized
+EAL: Using IOMMU type 1 (Type 1)
+EAL: Ignore mapping IO port bar(1)
+EAL: Ignore mapping IO port bar(3)
+EAL: Probe PCI driver: net_qdma (10ee:9048) device: 0000:89:00.0 (socket 1)
+Device Type: Soft IP
+IP Type: EQDMA5.0 Soft IP
+Vivado Release: vivado 2020.2
+PMD: QDMA PMD VERSION: 2023.2.1
+eqdma_set_perf_opt: reg = 0x00000250 val = 0x00502015
+eqdma_set_perf_opt: reg = 0x0000004C val = 0x00010009
+eqdma_set_perf_opt: reg = 0x00000B08 val = 0x01000100
+eqdma_set_perf_opt: reg = 0x00000A80 val = 0x003C003C
+eqdma_set_perf_opt: reg = 0x00000A84 val = 0x804003C8
+eqdma_set_perf_opt: reg = 0x00000A84 val = 0x00008000
+eqdma_set_perf_opt: reg = 0x00001484 val = 0x00800320
+eqdma_set_perf_opt: reg = 0x00001400 val = 0x00004010
+eqdma_set_perf_opt: reg = 0x00001404 val = 0x00380060
+eqdma_set_perf_opt: reg = 0x0000015C val = 0x06045000
+eqdma_set_perf_opt: reg = 0x00000160 val = 0x00000000
+eqdma_set_perf_opt: BF reg = 0x0000015C val = 0x06045000
+eqdma_set_perf_opt: reg = 0x00000158 val = 0x86045000
+eqdma_set_perf_opt: reg = 0x00000E24 val = 0x86046000
+eqdma_set_perf_opt: reg = 0x00000E2C val = 0x82044000
+eqdma_set_perf_opt: reg = 0x000012EC val = 0x00000000
+qdma_dev_entry_create: Created the dev entry successfully
+EAL: Probe PCI driver: net_qdma (10ee:9048) device: 0000:89:00.0 (socket 1)
+EAL: Probe PCI driver: baseband_accl_ldpc (10ee:9048) device: 0000:89:00.0 (socket 1)
+ACCL: PROBE : accl_ldpc_pci_probe : 89:00.0 , pci_drv 0x561822f4f440 pci_dev 0x5618398c54f0
+ACCL: 185:get_pci_information() ACCL : PCIe LinkSpeed 4 : Width 8
+------------------------------------------------------
+Platform String       : 'w20241L3VqP9x2Hu'
+Platform Tag          : 'AMD_T2_M2.2a'
+Platform Timestamp    : '2024-10-18 08:52:15 GMT'
+------------------------------------------------------
+Max Descriptor Size   : 16384
+Number PCIe lanes     : 11
+Device A Frequency    : 249.000 MHz
+Device B Frequency    : 324.000 MHz
+Device C Frequency    : 0.000 MHz
+Device D Frequency    : 0.000 MHz
+------------------------------------------------------
+Number of Connected Devices    : 2
+------------------------------------------------------
+Device[ 0 ]:
+________________________________________
+__DeviceDescription__
+deviceID          : 1
+deviceType        : SD_FEC_Decoder
+deviceVersion     : 2
+deviceParallelism : 16
+________________________________________
+__InstanceDescription__
+totalInstances    : 5
+activeInstances   : 5
+Device:0  Type: 7
+------------------------------------------------------
+Device[ 1 ]:
+________________________________________
+__DeviceDescription__
+deviceID          : 2
+deviceType        : SD_FEC_Encoder
+deviceVersion     : 2
+deviceParallelism : 128
+________________________________________
+__InstanceDescription__
+totalInstances    : 3
+activeInstances   : 3
+Device:1  Type: 6
+------------------------------------------------------
+ACCL FPGA:[ 5SD-p16-249_m_hz_3SE-p128-324_m_hz_w20241L3VqP9x2Hu ]
+ACCL: max queues : 32
+ACCL: ACCL BBDEV PMD : [25.04.2]
+TELEMETRY: No legacy callbacks, legacy socket not created
+ACCL: accl_setup_queues: 89:00.0, num_queues 16, socket_id 1, port 0
+ACCL: alloc resources: qid 0, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 0, port 0, hw_queue_id 16, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 1, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 1, port 0, hw_queue_id 17, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 2, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 2, port 0, hw_queue_id 18, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 3, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 3, port 0, hw_queue_id 19, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 4, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 4, port 0, hw_queue_id 20, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 5, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 5, port 0, hw_queue_id 21, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 6, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 6, port 0, hw_queue_id 22, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 7, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 7, port 0, hw_queue_id 23, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 8, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 8, port 0, hw_queue_id 24, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 9, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 9, port 0, hw_queue_id 25, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 10, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 10, port 0, hw_queue_id 26, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 11, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 11, port 0, hw_queue_id 27, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 12, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 12, port 0, hw_queue_id 28, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 13, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 13, port 0, hw_queue_id 29, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 14, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 14, port 0, hw_queue_id 30, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: alloc resources: qid 15, socket 1, q size 1024, hdr size 64
+ACCL: q_setup(): qid 15, port 0, hw_queue_id 31, op_type RTE_BBDEV_OP_LDPC_ENC, with ID ranges 0 - 1021 (1022)
+ACCL: accl_ldpc_start: 89:00.0, port 0
+No error detected,eqdma_hw_error_process: Global Err Reg(0x248) = 0x0
+Total VF's in use 0
+ACCL: rte_eth_dev_stop: 89:00.0, port 0
+ACCL: accl_ldpc_close: 89:00.0, port 0
+Device with port_id=0 already stopped
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_63000_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65735.316 Ops/s, 555.33195 Mbps
+Throughput for core (17): 65428.88 Ops/s, 552.74318 Mbps
+Throughput for core (18): 65638.644 Ops/s, 554.51526 Mbps
+Throughput for core (19): 65633.108 Ops/s, 554.46849 Mbps
+Throughput for core (20): 65436.299 Ops/s, 552.80585 Mbps
+Throughput for core (21): 65654.798 Ops/s, 554.65173 Mbps
+Throughput for core (22): 65428.612 Ops/s, 552.74091 Mbps
+Throughput for core (23): 65422.875 Ops/s, 552.69245 Mbps
+Throughput for core (24): 65433.499 Ops/s, 552.7822 Mbps
+Throughput for core (25): 65717.1 Ops/s, 555.17806 Mbps
+Throughput for core (26): 65682.466 Ops/s, 554.88547 Mbps
+Throughput for core (27): 65672.866 Ops/s, 554.80437 Mbps
+Throughput for core (28): 65649.537 Ops/s, 554.60729 Mbps
+Throughput for core (29): 65636.892 Ops/s, 554.50046 Mbps
+Throughput for core (30): 65648 Ops/s, 554.5943 Mbps
+Throughput for core (31): 65434.881 Ops/s, 552.79388 Mbps
+
+Total throughput for 16 cores: 1049253.8 MOPS, 8864.0959 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1698.03 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_49152_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65908.211 Ops/s, 556.79257 Mbps
+Throughput for core (17): 65576.441 Ops/s, 553.98977 Mbps
+Throughput for core (18): 65448.305 Ops/s, 552.90728 Mbps
+Throughput for core (19): 65425.235 Ops/s, 552.71239 Mbps
+Throughput for core (20): 65434.167 Ops/s, 552.78784 Mbps
+Throughput for core (21): 65423.301 Ops/s, 552.69604 Mbps
+Throughput for core (22): 65425.952 Ops/s, 552.71844 Mbps
+Throughput for core (23): 65424.081 Ops/s, 552.70264 Mbps
+Throughput for core (24): 65512.376 Ops/s, 553.44856 Mbps
+Throughput for core (25): 65519.089 Ops/s, 553.50527 Mbps
+Throughput for core (26): 65460.491 Ops/s, 553.01023 Mbps
+Throughput for core (27): 65447.776 Ops/s, 552.90281 Mbps
+Throughput for core (28): 65446.428 Ops/s, 552.89143 Mbps
+Throughput for core (29): 65554.422 Ops/s, 553.80375 Mbps
+Throughput for core (30): 65429.513 Ops/s, 552.74853 Mbps
+Throughput for core (31): 65551.931 Ops/s, 553.78272 Mbps
+
+Total throughput for 16 cores: 1047987.7 MOPS, 8853.4003 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1676.76 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_32768_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65874.763 Ops/s, 556.50999 Mbps
+Throughput for core (17): 65422.836 Ops/s, 552.69212 Mbps
+Throughput for core (18): 65464.321 Ops/s, 553.04259 Mbps
+Throughput for core (19): 65560.239 Ops/s, 553.8529 Mbps
+Throughput for core (20): 65427.882 Ops/s, 552.73475 Mbps
+Throughput for core (21): 65437.537 Ops/s, 552.81631 Mbps
+Throughput for core (22): 65424.922 Ops/s, 552.70974 Mbps
+Throughput for core (23): 65424.2 Ops/s, 552.70364 Mbps
+Throughput for core (24): 65473.464 Ops/s, 553.11983 Mbps
+Throughput for core (25): 65472.411 Ops/s, 553.11093 Mbps
+Throughput for core (26): 65464.835 Ops/s, 553.04693 Mbps
+Throughput for core (27): 65448.219 Ops/s, 552.90656 Mbps
+Throughput for core (28): 65541.632 Ops/s, 553.69571 Mbps
+Throughput for core (29): 65438.563 Ops/s, 552.82498 Mbps
+Throughput for core (30): 65427.101 Ops/s, 552.72815 Mbps
+Throughput for core (31): 65513.093 Ops/s, 553.45461 Mbps
+
+Total throughput for 16 cores: 1047816 MOPS, 8851.9497 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1664.13 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_25344_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65756.043 Ops/s, 555.50705 Mbps
+Throughput for core (17): 65621.427 Ops/s, 554.36982 Mbps
+Throughput for core (18): 65441.347 Ops/s, 552.8485 Mbps
+Throughput for core (19): 65440.082 Ops/s, 552.83781 Mbps
+Throughput for core (20): 65432.968 Ops/s, 552.77771 Mbps
+Throughput for core (21): 65428.83 Ops/s, 552.74276 Mbps
+Throughput for core (22): 65748.893 Ops/s, 555.44665 Mbps
+Throughput for core (23): 65629.002 Ops/s, 554.43381 Mbps
+Throughput for core (24): 65423.362 Ops/s, 552.69656 Mbps
+Throughput for core (25): 65627.952 Ops/s, 554.42494 Mbps
+Throughput for core (26): 65799.981 Ops/s, 555.87824 Mbps
+Throughput for core (27): 65440.671 Ops/s, 552.84279 Mbps
+Throughput for core (28): 65759.701 Ops/s, 555.53795 Mbps
+Throughput for core (29): 65432.328 Ops/s, 552.77231 Mbps
+Throughput for core (30): 65431.799 Ops/s, 552.76784 Mbps
+Throughput for core (31): 65774.574 Ops/s, 555.6636 Mbps
+
+Total throughput for 16 cores: 1049189 MOPS, 8863.5483 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1658.02 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_7016_E_8568_BG_1_Q_m_8_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 240260.17 Ops/s, 1691.4316 Mbps
+Throughput for core (17): 240254.7 Ops/s, 1691.3931 Mbps
+Throughput for core (18): 240298.54 Ops/s, 1691.7017 Mbps
+Throughput for core (19): 240249.38 Ops/s, 1691.3556 Mbps
+Throughput for core (20): 240243.99 Ops/s, 1691.3177 Mbps
+Throughput for core (21): 240268.41 Ops/s, 1691.4896 Mbps
+Throughput for core (22): 240268.19 Ops/s, 1691.4881 Mbps
+Throughput for core (23): 238965.16 Ops/s, 1682.3147 Mbps
+Throughput for core (24): 238967.03 Ops/s, 1682.3279 Mbps
+Throughput for core (25): 238962.66 Ops/s, 1682.2971 Mbps
+Throughput for core (26): 238949.53 Ops/s, 1682.2047 Mbps
+Throughput for core (27): 238953.6 Ops/s, 1682.2333 Mbps
+Throughput for core (28): 238934.9 Ops/s, 1682.1017 Mbps
+Throughput for core (29): 238975.21 Ops/s, 1682.3855 Mbps
+Throughput for core (30): 238967.33 Ops/s, 1682.33 Mbps
+Throughput for core (31): 238970.6 Ops/s, 1682.353 Mbps
+
+Total throughput for 16 cores: 3832489.4 MOPS, 26980.725 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       508.381 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_7016_E_8144_BG_1_Q_m_8_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 259506.24 Ops/s, 1826.9239 Mbps
+Throughput for core (17): 259268.23 Ops/s, 1825.2484 Mbps
+Throughput for core (18): 258080.57 Ops/s, 1816.8872 Mbps
+Throughput for core (19): 258632.08 Ops/s, 1820.7699 Mbps
+Throughput for core (20): 258630.79 Ops/s, 1820.7607 Mbps
+Throughput for core (21): 258630.5 Ops/s, 1820.7587 Mbps
+Throughput for core (22): 258116.3 Ops/s, 1817.1388 Mbps
+Throughput for core (23): 258080.85 Ops/s, 1816.8892 Mbps
+Throughput for core (24): 259545.83 Ops/s, 1827.2026 Mbps
+Throughput for core (25): 258080.98 Ops/s, 1816.8901 Mbps
+Throughput for core (26): 258138.73 Ops/s, 1817.2967 Mbps
+Throughput for core (27): 259170.4 Ops/s, 1824.5596 Mbps
+Throughput for core (28): 259223.69 Ops/s, 1824.9348 Mbps
+Throughput for core (29): 259507.59 Ops/s, 1826.9334 Mbps
+Throughput for core (30): 258137.34 Ops/s, 1817.2869 Mbps
+Throughput for core (31): 258093.8 Ops/s, 1816.9804 Mbps
+
+Total throughput for 16 cores: 4138843.9 MOPS, 29137.461 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       475.071 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_680_E_800_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 1016409.5 Ops/s, 715.5523 Mbps
+Throughput for core (17): 1011467.8 Ops/s, 712.07332 Mbps
+Throughput for core (18): 1012551.6 Ops/s, 712.83633 Mbps
+Throughput for core (19): 1011147.3 Ops/s, 711.84768 Mbps
+Throughput for core (20): 1012124.8 Ops/s, 712.53585 Mbps
+Throughput for core (21): 1011584.4 Ops/s, 712.1554 Mbps
+Throughput for core (22): 1010659.2 Ops/s, 711.50408 Mbps
+Throughput for core (23): 1012788.3 Ops/s, 713.00297 Mbps
+Throughput for core (24): 1010917.4 Ops/s, 711.68584 Mbps
+Throughput for core (25): 1012763.9 Ops/s, 712.98581 Mbps
+Throughput for core (26): 1015833.9 Ops/s, 715.14705 Mbps
+Throughput for core (27): 1011069.4 Ops/s, 711.79289 Mbps
+Throughput for core (28): 1010868.5 Ops/s, 711.65145 Mbps
+Throughput for core (29): 1013041.4 Ops/s, 713.18114 Mbps
+Throughput for core (30): 1012756.6 Ops/s, 712.98067 Mbps
+Throughput for core (31): 1010849.6 Ops/s, 711.63813 Mbps
+
+Total throughput for 16 cores: 16196834 MOPS, 11402.571 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       175.076 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_680_E_2112_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 695199.55 Ops/s, 489.42048 Mbps
+Throughput for core (17): 694370.39 Ops/s, 488.83676 Mbps
+Throughput for core (18): 695228.6 Ops/s, 489.44094 Mbps
+Throughput for core (19): 693037.56 Ops/s, 487.89844 Mbps
+Throughput for core (20): 692647.7 Ops/s, 487.62398 Mbps
+Throughput for core (21): 691927.53 Ops/s, 487.11698 Mbps
+Throughput for core (22): 692019.82 Ops/s, 487.18195 Mbps
+Throughput for core (23): 696522.53 Ops/s, 490.35186 Mbps
+Throughput for core (24): 695964.27 Ops/s, 489.95884 Mbps
+Throughput for core (25): 694458.69 Ops/s, 488.89892 Mbps
+Throughput for core (26): 691891.87 Ops/s, 487.09188 Mbps
+Throughput for core (27): 693906.44 Ops/s, 488.51013 Mbps
+Throughput for core (28): 691783.96 Ops/s, 487.01591 Mbps
+Throughput for core (29): 692386.88 Ops/s, 487.44037 Mbps
+Throughput for core (30): 693560.22 Ops/s, 488.2664 Mbps
+Throughput for core (31): 692479.3 Ops/s, 487.50543 Mbps
+
+Total throughput for 16 cores: 11097385 MOPS, 7812.5593 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       219.646 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_616_E_960_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 1014372.1 Ops/s, 649.19814 Mbps
+Throughput for core (17): 1015448.9 Ops/s, 649.88727 Mbps
+Throughput for core (18): 1015339.3 Ops/s, 649.81714 Mbps
+Throughput for core (19): 1014582.9 Ops/s, 649.33304 Mbps
+Throughput for core (20): 1014585.4 Ops/s, 649.33467 Mbps
+Throughput for core (21): 1011675.7 Ops/s, 647.47243 Mbps
+Throughput for core (22): 1014555.3 Ops/s, 649.3154 Mbps
+Throughput for core (23): 1014362.4 Ops/s, 649.19196 Mbps
+Throughput for core (24): 1011636.6 Ops/s, 647.44741 Mbps
+Throughput for core (25): 1011349.1 Ops/s, 647.26343 Mbps
+Throughput for core (26): 1011344.5 Ops/s, 647.26046 Mbps
+Throughput for core (27): 1012338.6 Ops/s, 647.89673 Mbps
+Throughput for core (28): 1012131.5 Ops/s, 647.76415 Mbps
+Throughput for core (29): 1012455 Ops/s, 647.97123 Mbps
+Throughput for core (30): 1011195.8 Ops/s, 647.16529 Mbps
+Throughput for core (31): 1011383 Ops/s, 647.28512 Mbps
+
+Total throughput for 16 cores: 16208756 MOPS, 10373.604 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       170.804 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_616_E_3200_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 645642.28 Ops/s, 413.21106 Mbps
+Throughput for core (17): 646216.42 Ops/s, 413.57851 Mbps
+Throughput for core (18): 648766.83 Ops/s, 415.21077 Mbps
+Throughput for core (19): 648488.54 Ops/s, 415.03267 Mbps
+Throughput for core (20): 648088.93 Ops/s, 414.77691 Mbps
+Throughput for core (21): 646512.46 Ops/s, 413.76798 Mbps
+Throughput for core (22): 645326.43 Ops/s, 413.00892 Mbps
+Throughput for core (23): 644970.83 Ops/s, 412.78133 Mbps
+Throughput for core (24): 645002.44 Ops/s, 412.80156 Mbps
+Throughput for core (25): 644891.56 Ops/s, 412.7306 Mbps
+Throughput for core (26): 644862.49 Ops/s, 412.712 Mbps
+Throughput for core (27): 645146.04 Ops/s, 412.89346 Mbps
+Throughput for core (28): 646422.54 Ops/s, 413.71043 Mbps
+Throughput for core (29): 645399.08 Ops/s, 413.05541 Mbps
+Throughput for core (30): 645712.99 Ops/s, 413.25631 Mbps
+Throughput for core (31): 644653.95 Ops/s, 412.57853 Mbps
+
+Total throughput for 16 cores: 10336104 MOPS, 6615.1064 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       229.467 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 584413.87 Ops/s, 3291.4189 Mbps
+Throughput for core (17): 584502.05 Ops/s, 3291.9156 Mbps
+Throughput for core (18): 584453.33 Ops/s, 3291.6411 Mbps
+Throughput for core (19): 584142.55 Ops/s, 3289.8908 Mbps
+Throughput for core (20): 583762.07 Ops/s, 3287.748 Mbps
+Throughput for core (21): 588983.27 Ops/s, 3317.1538 Mbps
+Throughput for core (22): 583820.8 Ops/s, 3288.0788 Mbps
+Throughput for core (23): 583833.76 Ops/s, 3288.1518 Mbps
+Throughput for core (24): 583809.92 Ops/s, 3288.0174 Mbps
+Throughput for core (25): 583816.76 Ops/s, 3288.056 Mbps
+Throughput for core (26): 583783.23 Ops/s, 3287.8672 Mbps
+Throughput for core (27): 583943.7 Ops/s, 3288.7709 Mbps
+Throughput for core (28): 583899.18 Ops/s, 3288.5202 Mbps
+Throughput for core (29): 583892.52 Ops/s, 3288.4826 Mbps
+Throughput for core (30): 583882.02 Ops/s, 3288.4235 Mbps
+Throughput for core (31): 583813.21 Ops/s, 3288.036 Mbps
+
+Total throughput for 16 cores: 9348752.2 MOPS, 52652.173 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       247.122 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 151580.2 Ops/s, 853.69969 Mbps
+Throughput for core (17): 150497.96 Ops/s, 847.60452 Mbps
+Throughput for core (18): 150850.19 Ops/s, 849.58826 Mbps
+Throughput for core (19): 150811.72 Ops/s, 849.3716 Mbps
+Throughput for core (20): 150573.61 Ops/s, 848.03057 Mbps
+Throughput for core (21): 150546.75 Ops/s, 847.8793 Mbps
+Throughput for core (22): 150554.3 Ops/s, 847.92181 Mbps
+Throughput for core (23): 150872.97 Ops/s, 849.71657 Mbps
+Throughput for core (24): 150949.99 Ops/s, 850.15034 Mbps
+Throughput for core (25): 150720.83 Ops/s, 848.85974 Mbps
+Throughput for core (26): 150682.42 Ops/s, 848.64336 Mbps
+Throughput for core (27): 150681.9 Ops/s, 848.64046 Mbps
+Throughput for core (28): 150680.84 Ops/s, 848.63449 Mbps
+Throughput for core (29): 150565.3 Ops/s, 847.98379 Mbps
+Throughput for core (30): 150726.02 Ops/s, 848.88894 Mbps
+Throughput for core (31): 150721.11 Ops/s, 848.86128 Mbps
+
+Total throughput for 16 cores: 2412016.1 MOPS, 13584.475 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       760.019 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_3816_E_5760_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 364834.22 Ops/s, 1400.9634 Mbps
+Throughput for core (17): 364882.25 Ops/s, 1401.1478 Mbps
+Throughput for core (18): 364689.95 Ops/s, 1400.4094 Mbps
+Throughput for core (19): 363647.04 Ops/s, 1396.4046 Mbps
+Throughput for core (20): 363588.87 Ops/s, 1396.1813 Mbps
+Throughput for core (21): 365107.21 Ops/s, 1402.0117 Mbps
+Throughput for core (22): 363312.82 Ops/s, 1395.1212 Mbps
+Throughput for core (23): 363293.88 Ops/s, 1395.0485 Mbps
+Throughput for core (24): 364662.97 Ops/s, 1400.3058 Mbps
+Throughput for core (25): 363733.83 Ops/s, 1396.7379 Mbps
+Throughput for core (26): 363731.54 Ops/s, 1396.7291 Mbps
+Throughput for core (27): 364827.88 Ops/s, 1400.9391 Mbps
+Throughput for core (28): 363699.47 Ops/s, 1396.606 Mbps
+Throughput for core (29): 363561.33 Ops/s, 1396.0755 Mbps
+Throughput for core (30): 363597.18 Ops/s, 1396.2132 Mbps
+Throughput for core (31): 363300.4 Ops/s, 1395.0735 Mbps
+
+Total throughput for 16 cores: 5824470.8 MOPS, 22365.968 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       353.591 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_3816_E_19200_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 96818.803 Ops/s, 371.7842 Mbps
+Throughput for core (17): 96071.657 Ops/s, 368.91516 Mbps
+Throughput for core (18): 96066.266 Ops/s, 368.89446 Mbps
+Throughput for core (19): 96064.145 Ops/s, 368.88632 Mbps
+Throughput for core (20): 96079.204 Ops/s, 368.94414 Mbps
+Throughput for core (21): 96097.521 Ops/s, 369.01448 Mbps
+Throughput for core (22): 96078.071 Ops/s, 368.93979 Mbps
+Throughput for core (23): 96101.807 Ops/s, 369.03094 Mbps
+Throughput for core (24): 96136.758 Ops/s, 369.16515 Mbps
+Throughput for core (25): 96136.171 Ops/s, 369.1629 Mbps
+Throughput for core (26): 96132.518 Ops/s, 369.14887 Mbps
+Throughput for core (27): 96115.385 Ops/s, 369.08308 Mbps
+Throughput for core (28): 96106.119 Ops/s, 369.0475 Mbps
+Throughput for core (29): 96765.902 Ops/s, 371.58106 Mbps
+Throughput for core (30): 96742.752 Ops/s, 371.49217 Mbps
+Throughput for core (31): 96637.885 Ops/s, 371.08948 Mbps
+
+Total throughput for 16 cores: 1540151 MOPS, 5914.1797 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1147.93 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_296_E_480_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 1077059.4 Ops/s, 344.65899 Mbps
+Throughput for core (17): 1071575.1 Ops/s, 342.90402 Mbps
+Throughput for core (18): 1072153.6 Ops/s, 343.08916 Mbps
+Throughput for core (19): 1072516.1 Ops/s, 343.20515 Mbps
+Throughput for core (20): 1075279.3 Ops/s, 344.08937 Mbps
+Throughput for core (21): 1070626.7 Ops/s, 342.60054 Mbps
+Throughput for core (22): 1070095.9 Ops/s, 342.43068 Mbps
+Throughput for core (23): 1076946.9 Ops/s, 344.62301 Mbps
+Throughput for core (24): 1070841.8 Ops/s, 342.66938 Mbps
+Throughput for core (25): 1071203.9 Ops/s, 342.78526 Mbps
+Throughput for core (26): 1070185.9 Ops/s, 342.4595 Mbps
+Throughput for core (27): 1072309.1 Ops/s, 343.13892 Mbps
+Throughput for core (28): 1070179.9 Ops/s, 342.45757 Mbps
+Throughput for core (29): 1070113.2 Ops/s, 342.43623 Mbps
+Throughput for core (30): 1070430.5 Ops/s, 342.53776 Mbps
+Throughput for core (31): 1070009.9 Ops/s, 342.40316 Mbps
+
+Total throughput for 16 cores: 17151527 MOPS, 5488.4887 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       163.445 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_296_E_1600_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 898572.4 Ops/s, 287.54317 Mbps
+Throughput for core (17): 899530.68 Ops/s, 287.84982 Mbps
+Throughput for core (18): 902618.53 Ops/s, 288.83793 Mbps
+Throughput for core (19): 900868.76 Ops/s, 288.278 Mbps
+Throughput for core (20): 900959.81 Ops/s, 288.30714 Mbps
+Throughput for core (21): 899709.22 Ops/s, 287.90695 Mbps
+Throughput for core (22): 898229.09 Ops/s, 287.43331 Mbps
+Throughput for core (23): 897857.27 Ops/s, 287.31433 Mbps
+Throughput for core (24): 897859.05 Ops/s, 287.31489 Mbps
+Throughput for core (25): 897399.63 Ops/s, 287.16788 Mbps
+Throughput for core (26): 897481.78 Ops/s, 287.19417 Mbps
+Throughput for core (27): 898355.63 Ops/s, 287.4738 Mbps
+Throughput for core (28): 898422.44 Ops/s, 287.49518 Mbps
+Throughput for core (29): 898172.51 Ops/s, 287.4152 Mbps
+Throughput for core (30): 897401.81 Ops/s, 287.16858 Mbps
+Throughput for core (31): 900645.37 Ops/s, 288.20652 Mbps
+
+Total throughput for 16 cores: 14384084 MOPS, 4602.9069 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       184.464 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 350062.84 Ops/s, 985.77697 Mbps
+Throughput for core (17): 350262.74 Ops/s, 986.33988 Mbps
+Throughput for core (18): 350022.94 Ops/s, 985.66459 Mbps
+Throughput for core (19): 350252.29 Ops/s, 986.31046 Mbps
+Throughput for core (20): 349065.68 Ops/s, 982.96895 Mbps
+Throughput for core (21): 348597.47 Ops/s, 981.65046 Mbps
+Throughput for core (22): 348593.74 Ops/s, 981.63996 Mbps
+Throughput for core (23): 348855.35 Ops/s, 982.37666 Mbps
+Throughput for core (24): 348967.91 Ops/s, 982.69363 Mbps
+Throughput for core (25): 348774.32 Ops/s, 982.14848 Mbps
+Throughput for core (26): 349203.23 Ops/s, 983.35631 Mbps
+Throughput for core (27): 348833.06 Ops/s, 982.31391 Mbps
+Throughput for core (28): 348730.15 Ops/s, 982.02409 Mbps
+Throughput for core (29): 348601.73 Ops/s, 981.66247 Mbps
+Throughput for core (30): 349103.15 Ops/s, 983.07447 Mbps
+Throughput for core (31): 348583.21 Ops/s, 981.61033 Mbps
+
+Total throughput for 16 cores: 5586509.8 MOPS, 15731.612 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       365.227 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_2792_E_3200_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 766149.5 Ops/s, 2157.477 Mbps
+Throughput for core (17): 763592.51 Ops/s, 2150.2765 Mbps
+Throughput for core (18): 763584.25 Ops/s, 2150.2532 Mbps
+Throughput for core (19): 764452.01 Ops/s, 2152.6969 Mbps
+Throughput for core (20): 763679.43 Ops/s, 2150.5213 Mbps
+Throughput for core (21): 763609.41 Ops/s, 2150.3241 Mbps
+Throughput for core (22): 763557.32 Ops/s, 2150.1774 Mbps
+Throughput for core (23): 763737.56 Ops/s, 2150.685 Mbps
+Throughput for core (24): 763824.82 Ops/s, 2150.9307 Mbps
+Throughput for core (25): 763798.35 Ops/s, 2150.8561 Mbps
+Throughput for core (26): 763768.77 Ops/s, 2150.7729 Mbps
+Throughput for core (27): 763653.27 Ops/s, 2150.4476 Mbps
+Throughput for core (28): 763605.7 Ops/s, 2150.3136 Mbps
+Throughput for core (29): 763621.17 Ops/s, 2150.3572 Mbps
+Throughput for core (30): 763642.6 Ops/s, 2150.4176 Mbps
+Throughput for core (31): 765839.18 Ops/s, 2156.6031 Mbps
+
+Total throughput for 16 cores: 12224116 MOPS, 34423.11 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       205.198 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_2536_E_3840_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 733644.67 Ops/s, 1878.1304 Mbps
+Throughput for core (17): 730154.1 Ops/s, 1869.1945 Mbps
+Throughput for core (18): 730628.52 Ops/s, 1870.409 Mbps
+Throughput for core (19): 730178.68 Ops/s, 1869.2574 Mbps
+Throughput for core (20): 729739.93 Ops/s, 1868.1342 Mbps
+Throughput for core (21): 729464.13 Ops/s, 1867.4282 Mbps
+Throughput for core (22): 729506.41 Ops/s, 1867.5364 Mbps
+Throughput for core (23): 729509.7 Ops/s, 1867.5448 Mbps
+Throughput for core (24): 730284.25 Ops/s, 1869.5277 Mbps
+Throughput for core (25): 729601.65 Ops/s, 1867.7802 Mbps
+Throughput for core (26): 730270.43 Ops/s, 1869.4923 Mbps
+Throughput for core (27): 729496.33 Ops/s, 1867.5106 Mbps
+Throughput for core (28): 729578.42 Ops/s, 1867.7207 Mbps
+Throughput for core (29): 729536.11 Ops/s, 1867.6124 Mbps
+Throughput for core (30): 729580.24 Ops/s, 1867.7254 Mbps
+Throughput for core (31): 729532.24 Ops/s, 1867.6025 Mbps
+
+Total throughput for 16 cores: 11680706 MOPS, 29902.607 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       209.077 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_2536_E_12800_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 246211.35 Ops/s, 630.30106 Mbps
+Throughput for core (17): 246143.34 Ops/s, 630.12696 Mbps
+Throughput for core (18): 245920.29 Ops/s, 629.55595 Mbps
+Throughput for core (19): 244851.69 Ops/s, 626.82034 Mbps
+Throughput for core (20): 244796.17 Ops/s, 626.6782 Mbps
+Throughput for core (21): 244733.76 Ops/s, 626.51842 Mbps
+Throughput for core (22): 246004.84 Ops/s, 629.77239 Mbps
+Throughput for core (23): 244773.82 Ops/s, 626.62098 Mbps
+Throughput for core (24): 244826.9 Ops/s, 626.75685 Mbps
+Throughput for core (25): 246038.59 Ops/s, 629.8588 Mbps
+Throughput for core (26): 245948.74 Ops/s, 629.62876 Mbps
+Throughput for core (27): 245917.19 Ops/s, 629.548 Mbps
+Throughput for core (28): 244849.16 Ops/s, 626.81386 Mbps
+Throughput for core (29): 244811.8 Ops/s, 626.7182 Mbps
+Throughput for core (30): 244749.8 Ops/s, 626.55949 Mbps
+Throughput for core (31): 244742.35 Ops/s, 626.54041 Mbps
+
+Total throughput for 16 cores: 3925319.8 MOPS, 10048.819 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       493.318 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 567547.07 Ops/s, 799.10628 Mbps
+Throughput for core (17): 566434.85 Ops/s, 797.54027 Mbps
+Throughput for core (18): 565647.92 Ops/s, 796.43227 Mbps
+Throughput for core (19): 566544.11 Ops/s, 797.6941 Mbps
+Throughput for core (20): 566122.03 Ops/s, 797.09981 Mbps
+Throughput for core (21): 566264.89 Ops/s, 797.30096 Mbps
+Throughput for core (22): 565690.12 Ops/s, 796.49168 Mbps
+Throughput for core (23): 567666.01 Ops/s, 799.27375 Mbps
+Throughput for core (24): 567636.24 Ops/s, 799.23182 Mbps
+Throughput for core (25): 565219.56 Ops/s, 795.82914 Mbps
+Throughput for core (26): 565054.28 Ops/s, 795.59642 Mbps
+Throughput for core (27): 564995.09 Ops/s, 795.51309 Mbps
+Throughput for core (28): 564991.5 Ops/s, 795.50803 Mbps
+Throughput for core (29): 565217.07 Ops/s, 795.82563 Mbps
+Throughput for core (30): 566323.95 Ops/s, 797.38412 Mbps
+Throughput for core (31): 565561.57 Ops/s, 796.31069 Mbps
+
+Total throughput for 16 cores: 9056916.3 MOPS, 12752.138 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       247.69 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 903913.59 Ops/s, 1272.7103 Mbps
+Throughput for core (17): 901804.67 Ops/s, 1269.741 Mbps
+Throughput for core (18): 902992.51 Ops/s, 1271.4135 Mbps
+Throughput for core (19): 902731.26 Ops/s, 1271.0456 Mbps
+Throughput for core (20): 900119.04 Ops/s, 1267.3676 Mbps
+Throughput for core (21): 902513.43 Ops/s, 1270.7389 Mbps
+Throughput for core (22): 900383.91 Ops/s, 1267.7406 Mbps
+Throughput for core (23): 902606.73 Ops/s, 1270.8703 Mbps
+Throughput for core (24): 903491.73 Ops/s, 1272.1164 Mbps
+Throughput for core (25): 902933.79 Ops/s, 1271.3308 Mbps
+Throughput for core (26): 900402.52 Ops/s, 1267.7668 Mbps
+Throughput for core (27): 901247.75 Ops/s, 1268.9568 Mbps
+Throughput for core (28): 903053.5 Ops/s, 1271.4993 Mbps
+Throughput for core (29): 905772.96 Ops/s, 1275.3283 Mbps
+Throughput for core (30): 900096.6 Ops/s, 1267.336 Mbps
+Throughput for core (31): 900073.33 Ops/s, 1267.3032 Mbps
+
+Total throughput for 16 cores: 14434137 MOPS, 20323.265 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       184.292 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_1256_E_6400_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 569237.51 Ops/s, 728.62401 Mbps
+Throughput for core (17): 567990.06 Ops/s, 727.02727 Mbps
+Throughput for core (18): 570319.38 Ops/s, 730.0088 Mbps
+Throughput for core (19): 569708.41 Ops/s, 729.22676 Mbps
+Throughput for core (20): 568348.7 Ops/s, 727.48633 Mbps
+Throughput for core (21): 570530.86 Ops/s, 730.2795 Mbps
+Throughput for core (22): 568806.37 Ops/s, 728.07216 Mbps
+Throughput for core (23): 567968.04 Ops/s, 726.99909 Mbps
+Throughput for core (24): 567915.27 Ops/s, 726.93154 Mbps
+Throughput for core (25): 568560.34 Ops/s, 727.75724 Mbps
+Throughput for core (26): 567788.5 Ops/s, 726.76928 Mbps
+Throughput for core (27): 567476.08 Ops/s, 726.36938 Mbps
+Throughput for core (28): 568031.37 Ops/s, 727.08016 Mbps
+Throughput for core (29): 567573.55 Ops/s, 726.49414 Mbps
+Throughput for core (30): 567424.92 Ops/s, 726.3039 Mbps
+Throughput for core (31): 567468.69 Ops/s, 726.35993 Mbps
+
+Total throughput for 16 cores: 9095148 MOPS, 11641.789 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       249.711 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_1256_E_1920_BG_2_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 904420.8 Ops/s, 1157.6586 Mbps
+Throughput for core (17): 903780.84 Ops/s, 1156.8395 Mbps
+Throughput for core (18): 905086.06 Ops/s, 1158.5102 Mbps
+Throughput for core (19): 904582.53 Ops/s, 1157.8656 Mbps
+Throughput for core (20): 904068.9 Ops/s, 1157.2082 Mbps
+Throughput for core (21): 903916.85 Ops/s, 1157.0136 Mbps
+Throughput for core (22): 903853.88 Ops/s, 1156.933 Mbps
+Throughput for core (23): 902884.47 Ops/s, 1155.6921 Mbps
+Throughput for core (24): 904189.66 Ops/s, 1157.3628 Mbps
+Throughput for core (25): 901477.81 Ops/s, 1153.8916 Mbps
+Throughput for core (26): 901289.06 Ops/s, 1153.65 Mbps
+Throughput for core (27): 902225.79 Ops/s, 1154.849 Mbps
+Throughput for core (28): 902398.63 Ops/s, 1155.0702 Mbps
+Throughput for core (29): 901293.63 Ops/s, 1153.6559 Mbps
+Throughput for core (30): 901210.59 Ops/s, 1153.5496 Mbps
+Throughput for core (31): 901219.51 Ops/s, 1153.561 Mbps
+
+Total throughput for 16 cores: 14447899 MOPS, 18493.311 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       181.218 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 222674.13 Ops/s, 1881.151 Mbps
+Throughput for core (17): 222703.28 Ops/s, 1881.3973 Mbps
+Throughput for core (18): 222686.68 Ops/s, 1881.257 Mbps
+Throughput for core (19): 222653.21 Ops/s, 1880.9743 Mbps
+Throughput for core (20): 221553.35 Ops/s, 1871.6827 Mbps
+Throughput for core (21): 221567.74 Ops/s, 1871.8043 Mbps
+Throughput for core (22): 221561.76 Ops/s, 1871.7537 Mbps
+Throughput for core (23): 221551.45 Ops/s, 1871.6667 Mbps
+Throughput for core (24): 222631.22 Ops/s, 1880.7885 Mbps
+Throughput for core (25): 222634.04 Ops/s, 1880.8124 Mbps
+Throughput for core (26): 222630.95 Ops/s, 1880.7862 Mbps
+Throughput for core (27): 221587.81 Ops/s, 1871.9738 Mbps
+Throughput for core (28): 221585.58 Ops/s, 1871.955 Mbps
+Throughput for core (29): 221573.4 Ops/s, 1871.8521 Mbps
+Throughput for core (30): 222661.31 Ops/s, 1881.0427 Mbps
+Throughput for core (31): 221563.64 Ops/s, 1871.7696 Mbps
+
+Total throughput for 16 cores: 3553819.5 MOPS, 30022.667 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       537.711 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_80016_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65759.089 Ops/s, 555.53278 Mbps
+Throughput for core (17): 65743.673 Ops/s, 555.40255 Mbps
+Throughput for core (18): 65762.281 Ops/s, 555.55975 Mbps
+Throughput for core (19): 65761.193 Ops/s, 555.55056 Mbps
+Throughput for core (20): 65741.21 Ops/s, 555.38174 Mbps
+Throughput for core (21): 65746.856 Ops/s, 555.42944 Mbps
+Throughput for core (22): 65753.409 Ops/s, 555.4848 Mbps
+Throughput for core (23): 65738.711 Ops/s, 555.36063 Mbps
+Throughput for core (24): 65431.095 Ops/s, 552.76189 Mbps
+Throughput for core (25): 65430.581 Ops/s, 552.75755 Mbps
+Throughput for core (26): 65429.685 Ops/s, 552.74997 Mbps
+Throughput for core (27): 65429.045 Ops/s, 552.74458 Mbps
+Throughput for core (28): 65425.574 Ops/s, 552.71525 Mbps
+Throughput for core (29): 65424.73 Ops/s, 552.70812 Mbps
+Throughput for core (30): 65425.985 Ops/s, 552.71872 Mbps
+Throughput for core (31): 65423.637 Ops/s, 552.69889 Mbps
+
+Total throughput for 16 cores: 1049426.8 MOPS, 8865.5572 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1687.44 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/encode/ldpc_enc_K_prime_minus_L_8424_E_65016_BG_1_Q_m_2_RM_on_CRC_24B.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_ENC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65465.976 Ops/s, 553.05657 Mbps
+Throughput for core (17): 65474.999 Ops/s, 553.13279 Mbps
+Throughput for core (18): 65473.712 Ops/s, 553.12192 Mbps
+Throughput for core (19): 65472.151 Ops/s, 553.10874 Mbps
+Throughput for core (20): 65462.747 Ops/s, 553.02929 Mbps
+Throughput for core (21): 65469.359 Ops/s, 553.08514 Mbps
+Throughput for core (22): 65461.315 Ops/s, 553.01719 Mbps
+Throughput for core (23): 65423.513 Ops/s, 552.69783 Mbps
+Throughput for core (24): 65454.719 Ops/s, 552.96146 Mbps
+Throughput for core (25): 65427.498 Ops/s, 552.7315 Mbps
+Throughput for core (26): 65427.08 Ops/s, 552.72797 Mbps
+Throughput for core (27): 65426.127 Ops/s, 552.71992 Mbps
+Throughput for core (28): 65425.547 Ops/s, 552.71502 Mbps
+Throughput for core (29): 65424.62 Ops/s, 552.70719 Mbps
+Throughput for core (30): 65424.164 Ops/s, 552.70334 Mbps
+Throughput for core (31): 65456.021 Ops/s, 552.97246 Mbps
+
+Total throughput for 16 cores: 1047169.5 MOPS, 8846.4883 Mbps
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1677.3 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_3816_E_19200_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 25085.684 Ops/s, 96.329028 Mbps @ max 6 iterations
+Throughput for core (17): 25085.359 Ops/s, 96.32778 Mbps @ max 6 iterations
+Throughput for core (18): 25081.33 Ops/s, 96.312306 Mbps @ max 6 iterations
+Throughput for core (19): 25075.04 Ops/s, 96.288152 Mbps @ max 6 iterations
+Throughput for core (20): 25074.524 Ops/s, 96.286171 Mbps @ max 6 iterations
+Throughput for core (21): 25074.118 Ops/s, 96.284614 Mbps @ max 6 iterations
+Throughput for core (22): 25073.531 Ops/s, 96.282359 Mbps @ max 6 iterations
+Throughput for core (23): 25073.096 Ops/s, 96.280689 Mbps @ max 6 iterations
+Throughput for core (24): 25075.959 Ops/s, 96.291682 Mbps @ max 6 iterations
+Throughput for core (25): 25075.806 Ops/s, 96.291096 Mbps @ max 6 iterations
+Throughput for core (26): 25075.509 Ops/s, 96.289956 Mbps @ max 6 iterations
+Throughput for core (27): 25075.258 Ops/s, 96.288989 Mbps @ max 6 iterations
+Throughput for core (28): 25074.776 Ops/s, 96.28714 Mbps @ max 6 iterations
+Throughput for core (29): 25074.316 Ops/s, 96.285373 Mbps @ max 6 iterations
+Throughput for core (30): 25073.773 Ops/s, 96.283287 Mbps @ max 6 iterations
+Throughput for core (31): 25073.324 Ops/s, 96.281563 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 401221.4 MOPS, 1540.6902 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       4898.21 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_296_E_480_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 725405.21 Ops/s, 232.12967 Mbps @ max 6 iterations
+Throughput for core (17): 726063.07 Ops/s, 232.34018 Mbps @ max 6 iterations
+Throughput for core (18): 726499.22 Ops/s, 232.47975 Mbps @ max 6 iterations
+Throughput for core (19): 726458.33 Ops/s, 232.46667 Mbps @ max 6 iterations
+Throughput for core (20): 726460.85 Ops/s, 232.46747 Mbps @ max 6 iterations
+Throughput for core (21): 726297.36 Ops/s, 232.41516 Mbps @ max 6 iterations
+Throughput for core (22): 725284.83 Ops/s, 232.09114 Mbps @ max 6 iterations
+Throughput for core (23): 725826.43 Ops/s, 232.26446 Mbps @ max 6 iterations
+Throughput for core (24): 725921.53 Ops/s, 232.29489 Mbps @ max 6 iterations
+Throughput for core (25): 725763.18 Ops/s, 232.24422 Mbps @ max 6 iterations
+Throughput for core (26): 725143.22 Ops/s, 232.04583 Mbps @ max 6 iterations
+Throughput for core (27): 725268.74 Ops/s, 232.086 Mbps @ max 6 iterations
+Throughput for core (28): 724848.02 Ops/s, 231.95137 Mbps @ max 6 iterations
+Throughput for core (29): 724965.91 Ops/s, 231.98909 Mbps @ max 6 iterations
+Throughput for core (30): 724982.86 Ops/s, 231.99451 Mbps @ max 6 iterations
+Throughput for core (31): 724801.73 Ops/s, 231.93655 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 11609990 MOPS, 3715.197 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       269.461 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_296_E_1600_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 255521.94 Ops/s, 81.767022 Mbps @ max 6 iterations
+Throughput for core (17): 254372.92 Ops/s, 81.399335 Mbps @ max 6 iterations
+Throughput for core (18): 254412.34 Ops/s, 81.41195 Mbps @ max 6 iterations
+Throughput for core (19): 254420.29 Ops/s, 81.414491 Mbps @ max 6 iterations
+Throughput for core (20): 255402.23 Ops/s, 81.728712 Mbps @ max 6 iterations
+Throughput for core (21): 254417.79 Ops/s, 81.413694 Mbps @ max 6 iterations
+Throughput for core (22): 255397.34 Ops/s, 81.727147 Mbps @ max 6 iterations
+Throughput for core (23): 254383.93 Ops/s, 81.402857 Mbps @ max 6 iterations
+Throughput for core (24): 255836.41 Ops/s, 81.867651 Mbps @ max 6 iterations
+Throughput for core (25): 254777.61 Ops/s, 81.528835 Mbps @ max 6 iterations
+Throughput for core (26): 254454.53 Ops/s, 81.425448 Mbps @ max 6 iterations
+Throughput for core (27): 254448.39 Ops/s, 81.423485 Mbps @ max 6 iterations
+Throughput for core (28): 255790.87 Ops/s, 81.853079 Mbps @ max 6 iterations
+Throughput for core (29): 255587.28 Ops/s, 81.787928 Mbps @ max 6 iterations
+Throughput for core (30): 255404.49 Ops/s, 81.729438 Mbps @ max 6 iterations
+Throughput for core (31): 255389.72 Ops/s, 81.72471 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 4080018.1 MOPS, 1305.6058 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       559.937 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_2536_E_3840_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 215931.32 Ops/s, 552.78419 Mbps @ max 6 iterations
+Throughput for core (17): 215971.86 Ops/s, 552.88797 Mbps @ max 6 iterations
+Throughput for core (18): 216025.8 Ops/s, 553.02605 Mbps @ max 6 iterations
+Throughput for core (19): 215987.44 Ops/s, 552.92785 Mbps @ max 6 iterations
+Throughput for core (20): 215972.99 Ops/s, 552.89085 Mbps @ max 6 iterations
+Throughput for core (21): 215954.84 Ops/s, 552.8444 Mbps @ max 6 iterations
+Throughput for core (22): 215937.06 Ops/s, 552.79888 Mbps @ max 6 iterations
+Throughput for core (23): 215934.07 Ops/s, 552.79121 Mbps @ max 6 iterations
+Throughput for core (24): 215928.46 Ops/s, 552.77685 Mbps @ max 6 iterations
+Throughput for core (25): 215941.97 Ops/s, 552.81143 Mbps @ max 6 iterations
+Throughput for core (26): 215932.51 Ops/s, 552.78722 Mbps @ max 6 iterations
+Throughput for core (27): 215932.91 Ops/s, 552.78826 Mbps @ max 6 iterations
+Throughput for core (28): 215942.88 Ops/s, 552.81378 Mbps @ max 6 iterations
+Throughput for core (29): 215938.82 Ops/s, 552.80338 Mbps @ max 6 iterations
+Throughput for core (30): 215946.46 Ops/s, 552.82293 Mbps @ max 6 iterations
+Throughput for core (31): 215931.96 Ops/s, 552.78582 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 3455211.4 MOPS, 8845.3411 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       707.61 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_2536_E_12800_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 65283.419 Ops/s, 167.12555 Mbps @ max 6 iterations
+Throughput for core (17): 65282.764 Ops/s, 167.12388 Mbps @ max 6 iterations
+Throughput for core (18): 65264.511 Ops/s, 167.07715 Mbps @ max 6 iterations
+Throughput for core (19): 65279.584 Ops/s, 167.11574 Mbps @ max 6 iterations
+Throughput for core (20): 65263.598 Ops/s, 167.07481 Mbps @ max 6 iterations
+Throughput for core (21): 65262.357 Ops/s, 167.07163 Mbps @ max 6 iterations
+Throughput for core (22): 65261.14 Ops/s, 167.06852 Mbps @ max 6 iterations
+Throughput for core (23): 65259.953 Ops/s, 167.06548 Mbps @ max 6 iterations
+Throughput for core (24): 65258.761 Ops/s, 167.06243 Mbps @ max 6 iterations
+Throughput for core (25): 65258.271 Ops/s, 167.06117 Mbps @ max 6 iterations
+Throughput for core (26): 65265.731 Ops/s, 167.08027 Mbps @ max 6 iterations
+Throughput for core (27): 65264.481 Ops/s, 167.07707 Mbps @ max 6 iterations
+Throughput for core (28): 65263.723 Ops/s, 167.07513 Mbps @ max 6 iterations
+Throughput for core (29): 65262.822 Ops/s, 167.07283 Mbps @ max 6 iterations
+Throughput for core (30): 65261.751 Ops/s, 167.07008 Mbps @ max 6 iterations
+Throughput for core (31): 65260.188 Ops/s, 167.06608 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1044253.1 MOPS, 2673.2878 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       2125.39 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_1256_E_6400_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 124271.09 Ops/s, 159.06699 Mbps @ max 6 iterations
+Throughput for core (17): 124042.53 Ops/s, 158.77444 Mbps @ max 6 iterations
+Throughput for core (18): 124040.17 Ops/s, 158.77142 Mbps @ max 6 iterations
+Throughput for core (19): 124926.89 Ops/s, 159.90641 Mbps @ max 6 iterations
+Throughput for core (20): 124027.71 Ops/s, 158.75547 Mbps @ max 6 iterations
+Throughput for core (21): 124026.25 Ops/s, 158.7536 Mbps @ max 6 iterations
+Throughput for core (22): 124062.23 Ops/s, 158.79966 Mbps @ max 6 iterations
+Throughput for core (23): 124045.16 Ops/s, 158.77781 Mbps @ max 6 iterations
+Throughput for core (24): 124030.6 Ops/s, 158.75917 Mbps @ max 6 iterations
+Throughput for core (25): 124043.38 Ops/s, 158.77552 Mbps @ max 6 iterations
+Throughput for core (26): 124040.52 Ops/s, 158.77187 Mbps @ max 6 iterations
+Throughput for core (27): 124037.98 Ops/s, 158.76861 Mbps @ max 6 iterations
+Throughput for core (28): 124038.17 Ops/s, 158.76885 Mbps @ max 6 iterations
+Throughput for core (29): 124026.32 Ops/s, 158.75369 Mbps @ max 6 iterations
+Throughput for core (30): 124031.03 Ops/s, 158.75971 Mbps @ max 6 iterations
+Throughput for core (31): 124125.24 Ops/s, 158.88031 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1985815.3 MOPS, 2541.8435 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1152.4 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_1256_E_1920_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 384173.54 Ops/s, 491.74214 Mbps @ max 6 iterations
+Throughput for core (17): 383540.86 Ops/s, 490.93231 Mbps @ max 6 iterations
+Throughput for core (18): 382819.96 Ops/s, 490.00955 Mbps @ max 6 iterations
+Throughput for core (19): 382776.94 Ops/s, 489.95448 Mbps @ max 6 iterations
+Throughput for core (20): 383008.66 Ops/s, 490.25109 Mbps @ max 6 iterations
+Throughput for core (21): 382781.53 Ops/s, 489.96035 Mbps @ max 6 iterations
+Throughput for core (22): 383582.06 Ops/s, 490.98503 Mbps @ max 6 iterations
+Throughput for core (23): 383136.67 Ops/s, 490.41493 Mbps @ max 6 iterations
+Throughput for core (24): 383624.8 Ops/s, 491.03974 Mbps @ max 6 iterations
+Throughput for core (25): 383466.23 Ops/s, 490.83678 Mbps @ max 6 iterations
+Throughput for core (26): 382822.89 Ops/s, 490.0133 Mbps @ max 6 iterations
+Throughput for core (27): 382797.2 Ops/s, 489.98042 Mbps @ max 6 iterations
+Throughput for core (28): 383470.78 Ops/s, 490.8426 Mbps @ max 6 iterations
+Throughput for core (29): 383196.94 Ops/s, 490.49209 Mbps @ max 6 iterations
+Throughput for core (30): 384239.76 Ops/s, 491.82689 Mbps @ max 6 iterations
+Throughput for core (31): 382861.24 Ops/s, 490.06239 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 6132300.1 MOPS, 7849.3441 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       430.704 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 91017.917 Ops/s, 768.91936 Mbps @ max 6 iterations
+Throughput for core (17): 91015.978 Ops/s, 768.90298 Mbps @ max 6 iterations
+Throughput for core (18): 91014.16 Ops/s, 768.88763 Mbps @ max 6 iterations
+Throughput for core (19): 91024.918 Ops/s, 768.97851 Mbps @ max 6 iterations
+Throughput for core (20): 91025.121 Ops/s, 768.98022 Mbps @ max 6 iterations
+Throughput for core (21): 91010.988 Ops/s, 768.86083 Mbps @ max 6 iterations
+Throughput for core (22): 91011.433 Ops/s, 768.86459 Mbps @ max 6 iterations
+Throughput for core (23): 91009.214 Ops/s, 768.84584 Mbps @ max 6 iterations
+Throughput for core (24): 91007.595 Ops/s, 768.83216 Mbps @ max 6 iterations
+Throughput for core (25): 91007.173 Ops/s, 768.8286 Mbps @ max 6 iterations
+Throughput for core (26): 91005.598 Ops/s, 768.81529 Mbps @ max 6 iterations
+Throughput for core (27): 91005.196 Ops/s, 768.8119 Mbps @ max 6 iterations
+Throughput for core (28): 91014.611 Ops/s, 768.89143 Mbps @ max 6 iterations
+Throughput for core (29): 91014.071 Ops/s, 768.88687 Mbps @ max 6 iterations
+Throughput for core (30): 91011.888 Ops/s, 768.86843 Mbps @ max 6 iterations
+Throughput for core (31): 91010.917 Ops/s, 768.86022 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1456206.8 MOPS, 12302.035 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1563.29 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_8424_E_9600_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 104548.73 Ops/s, 883.22768 Mbps @ max 6 iterations
+Throughput for core (17): 104710.11 Ops/s, 884.59098 Mbps @ max 6 iterations
+Throughput for core (18): 104669.22 Ops/s, 884.24553 Mbps @ max 6 iterations
+Throughput for core (19): 104621.34 Ops/s, 883.84104 Mbps @ max 6 iterations
+Throughput for core (20): 104692.65 Ops/s, 884.44355 Mbps @ max 6 iterations
+Throughput for core (21): 104609.78 Ops/s, 883.74345 Mbps @ max 6 iterations
+Throughput for core (22): 104620.37 Ops/s, 883.83285 Mbps @ max 6 iterations
+Throughput for core (23): 104554.41 Ops/s, 883.27562 Mbps @ max 6 iterations
+Throughput for core (24): 104553.11 Ops/s, 883.26466 Mbps @ max 6 iterations
+Throughput for core (25): 104550.85 Ops/s, 883.24559 Mbps @ max 6 iterations
+Throughput for core (26): 104544.51 Ops/s, 883.19202 Mbps @ max 6 iterations
+Throughput for core (27): 104549.21 Ops/s, 883.23176 Mbps @ max 6 iterations
+Throughput for core (28): 104544.52 Ops/s, 883.19212 Mbps @ max 6 iterations
+Throughput for core (29): 104682.15 Ops/s, 884.35483 Mbps @ max 6 iterations
+Throughput for core (30): 104800.92 Ops/s, 885.35815 Mbps @ max 6 iterations
+Throughput for core (31): 104562.47 Ops/s, 883.34379 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1673814.3 MOPS, 14140.384 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1109.66 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_680_E_800_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 611356.4 Ops/s, 430.3949 Mbps @ max 6 iterations
+Throughput for core (17): 611603.78 Ops/s, 430.56906 Mbps @ max 6 iterations
+Throughput for core (18): 611603.25 Ops/s, 430.56869 Mbps @ max 6 iterations
+Throughput for core (19): 611576.04 Ops/s, 430.54953 Mbps @ max 6 iterations
+Throughput for core (20): 616538.85 Ops/s, 434.04335 Mbps @ max 6 iterations
+Throughput for core (21): 611655.67 Ops/s, 430.60559 Mbps @ max 6 iterations
+Throughput for core (22): 611341.11 Ops/s, 430.38414 Mbps @ max 6 iterations
+Throughput for core (23): 611327.98 Ops/s, 430.3749 Mbps @ max 6 iterations
+Throughput for core (24): 611296.67 Ops/s, 430.35286 Mbps @ max 6 iterations
+Throughput for core (25): 611339.57 Ops/s, 430.38306 Mbps @ max 6 iterations
+Throughput for core (26): 611271.39 Ops/s, 430.33506 Mbps @ max 6 iterations
+Throughput for core (27): 611253.96 Ops/s, 430.32279 Mbps @ max 6 iterations
+Throughput for core (28): 611167.46 Ops/s, 430.26189 Mbps @ max 6 iterations
+Throughput for core (29): 613229.29 Ops/s, 431.71342 Mbps @ max 6 iterations
+Throughput for core (30): 611606.56 Ops/s, 430.57102 Mbps @ max 6 iterations
+Throughput for core (31): 611553.11 Ops/s, 430.53339 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 9789721.1 MOPS, 6891.9636 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       292.233 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_680_E_800_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 614939.33 Ops/s, 432.91728 Mbps @ max 6 iterations
+Throughput for core (17): 611258.79 Ops/s, 430.32619 Mbps @ max 6 iterations
+Throughput for core (18): 611280.24 Ops/s, 430.34129 Mbps @ max 6 iterations
+Throughput for core (19): 611175.79 Ops/s, 430.26776 Mbps @ max 6 iterations
+Throughput for core (20): 611849.2 Ops/s, 430.74183 Mbps @ max 6 iterations
+Throughput for core (21): 613260.05 Ops/s, 431.73507 Mbps @ max 6 iterations
+Throughput for core (22): 611670.19 Ops/s, 430.61581 Mbps @ max 6 iterations
+Throughput for core (23): 614390.15 Ops/s, 432.53066 Mbps @ max 6 iterations
+Throughput for core (24): 613527.87 Ops/s, 431.92362 Mbps @ max 6 iterations
+Throughput for core (25): 611461.66 Ops/s, 430.46901 Mbps @ max 6 iterations
+Throughput for core (26): 614000.31 Ops/s, 432.25622 Mbps @ max 6 iterations
+Throughput for core (27): 614064.42 Ops/s, 432.30135 Mbps @ max 6 iterations
+Throughput for core (28): 613809.7 Ops/s, 432.12203 Mbps @ max 6 iterations
+Throughput for core (29): 611244.61 Ops/s, 430.31621 Mbps @ max 6 iterations
+Throughput for core (30): 613193.93 Ops/s, 431.68853 Mbps @ max 6 iterations
+Throughput for core (31): 611597.17 Ops/s, 430.56441 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 9802723.4 MOPS, 6901.1173 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       258.823 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_680_E_2112_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 141472.15 Ops/s, 99.596392 Mbps @ max 6 iterations
+Throughput for core (17): 141473.25 Ops/s, 99.597169 Mbps @ max 6 iterations
+Throughput for core (18): 141447.25 Ops/s, 99.578863 Mbps @ max 6 iterations
+Throughput for core (19): 141415.13 Ops/s, 99.556248 Mbps @ max 6 iterations
+Throughput for core (20): 141430.1 Ops/s, 99.566793 Mbps @ max 6 iterations
+Throughput for core (21): 141236.04 Ops/s, 99.43017 Mbps @ max 6 iterations
+Throughput for core (22): 141254.32 Ops/s, 99.443042 Mbps @ max 6 iterations
+Throughput for core (23): 141249.71 Ops/s, 99.439794 Mbps @ max 6 iterations
+Throughput for core (24): 141240.9 Ops/s, 99.433593 Mbps @ max 6 iterations
+Throughput for core (25): 141241.56 Ops/s, 99.43406 Mbps @ max 6 iterations
+Throughput for core (26): 141247.12 Ops/s, 99.437973 Mbps @ max 6 iterations
+Throughput for core (27): 141403.74 Ops/s, 99.54823 Mbps @ max 6 iterations
+Throughput for core (28): 141237.96 Ops/s, 99.431522 Mbps @ max 6 iterations
+Throughput for core (29): 141425.92 Ops/s, 99.563845 Mbps @ max 6 iterations
+Throughput for core (30): 141398.3 Ops/s, 99.544402 Mbps @ max 6 iterations
+Throughput for core (31): 141246.65 Ops/s, 99.437645 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2261420.1 MOPS, 1592.0397 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       885.499 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_680_E_2112_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 141844.4 Ops/s, 99.858459 Mbps @ max 6 iterations
+Throughput for core (17): 141257.12 Ops/s, 99.445016 Mbps @ max 6 iterations
+Throughput for core (18): 141242.03 Ops/s, 99.434391 Mbps @ max 6 iterations
+Throughput for core (19): 141240.36 Ops/s, 99.433216 Mbps @ max 6 iterations
+Throughput for core (20): 141694.8 Ops/s, 99.75314 Mbps @ max 6 iterations
+Throughput for core (21): 141735.63 Ops/s, 99.781883 Mbps @ max 6 iterations
+Throughput for core (22): 141707.24 Ops/s, 99.761897 Mbps @ max 6 iterations
+Throughput for core (23): 141237.23 Ops/s, 99.431011 Mbps @ max 6 iterations
+Throughput for core (24): 141715.48 Ops/s, 99.767695 Mbps @ max 6 iterations
+Throughput for core (25): 141713.9 Ops/s, 99.766582 Mbps @ max 6 iterations
+Throughput for core (26): 141244.87 Ops/s, 99.436386 Mbps @ max 6 iterations
+Throughput for core (27): 141784.48 Ops/s, 99.816272 Mbps @ max 6 iterations
+Throughput for core (28): 141247.33 Ops/s, 99.438117 Mbps @ max 6 iterations
+Throughput for core (29): 141757.42 Ops/s, 99.797227 Mbps @ max 6 iterations
+Throughput for core (30): 141739.25 Ops/s, 99.784434 Mbps @ max 6 iterations
+Throughput for core (31): 141732.63 Ops/s, 99.77977 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2264894.2 MOPS, 1594.4855 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       815.921 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 134145.46 Ops/s, 755.50723 Mbps @ max 6 iterations
+Throughput for core (17): 133973.4 Ops/s, 754.53819 Mbps @ max 6 iterations
+Throughput for core (18): 133987.84 Ops/s, 754.61952 Mbps @ max 6 iterations
+Throughput for core (19): 133982.64 Ops/s, 754.59025 Mbps @ max 6 iterations
+Throughput for core (20): 133983.55 Ops/s, 754.59536 Mbps @ max 6 iterations
+Throughput for core (21): 133979.41 Ops/s, 754.57203 Mbps @ max 6 iterations
+Throughput for core (22): 133977.33 Ops/s, 754.56031 Mbps @ max 6 iterations
+Throughput for core (23): 133974.92 Ops/s, 754.54676 Mbps @ max 6 iterations
+Throughput for core (24): 133992.85 Ops/s, 754.64772 Mbps @ max 6 iterations
+Throughput for core (25): 133993.92 Ops/s, 754.65377 Mbps @ max 6 iterations
+Throughput for core (26): 133989.12 Ops/s, 754.62673 Mbps @ max 6 iterations
+Throughput for core (27): 133988.21 Ops/s, 754.62157 Mbps @ max 6 iterations
+Throughput for core (28): 133982.57 Ops/s, 754.58981 Mbps @ max 6 iterations
+Throughput for core (29): 133982.74 Ops/s, 754.59078 Mbps @ max 6 iterations
+Throughput for core (30): 133979.45 Ops/s, 754.57227 Mbps @ max 6 iterations
+Throughput for core (31): 133975.7 Ops/s, 754.55115 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2143889.1 MOPS, 12074.383 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1079.22 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_5608_E_6400_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 163400.4 Ops/s, 920.27107 Mbps @ max 6 iterations
+Throughput for core (17): 163379.54 Ops/s, 920.15355 Mbps @ max 6 iterations
+Throughput for core (18): 163415.35 Ops/s, 920.35524 Mbps @ max 6 iterations
+Throughput for core (19): 163374.85 Ops/s, 920.12717 Mbps @ max 6 iterations
+Throughput for core (20): 163370.89 Ops/s, 920.10484 Mbps @ max 6 iterations
+Throughput for core (21): 163366.48 Ops/s, 920.08 Mbps @ max 6 iterations
+Throughput for core (22): 163335.37 Ops/s, 919.90481 Mbps @ max 6 iterations
+Throughput for core (23): 163405.78 Ops/s, 920.30136 Mbps @ max 6 iterations
+Throughput for core (24): 163344.45 Ops/s, 919.95597 Mbps @ max 6 iterations
+Throughput for core (25): 163350.05 Ops/s, 919.98749 Mbps @ max 6 iterations
+Throughput for core (26): 163352.48 Ops/s, 920.0012 Mbps @ max 6 iterations
+Throughput for core (27): 163348.3 Ops/s, 919.97763 Mbps @ max 6 iterations
+Throughput for core (28): 163346.27 Ops/s, 919.9662 Mbps @ max 6 iterations
+Throughput for core (29): 163344.36 Ops/s, 919.95541 Mbps @ max 6 iterations
+Throughput for core (30): 163346.64 Ops/s, 919.96826 Mbps @ max 6 iterations
+Throughput for core (31): 163339.25 Ops/s, 919.92666 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2613820.5 MOPS, 14721.037 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       732.01 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 35038.23 Ops/s, 197.33531 Mbps @ max 6 iterations
+Throughput for core (17): 35032.792 Ops/s, 197.30468 Mbps @ max 6 iterations
+Throughput for core (18): 35036.888 Ops/s, 197.32775 Mbps @ max 6 iterations
+Throughput for core (19): 35031.869 Ops/s, 197.29949 Mbps @ max 6 iterations
+Throughput for core (20): 35035.701 Ops/s, 197.32107 Mbps @ max 6 iterations
+Throughput for core (21): 35040.442 Ops/s, 197.34777 Mbps @ max 6 iterations
+Throughput for core (22): 35030.243 Ops/s, 197.29033 Mbps @ max 6 iterations
+Throughput for core (23): 35034.018 Ops/s, 197.31159 Mbps @ max 6 iterations
+Throughput for core (24): 35033.837 Ops/s, 197.31057 Mbps @ max 6 iterations
+Throughput for core (25): 35033.541 Ops/s, 197.30891 Mbps @ max 6 iterations
+Throughput for core (26): 35032.871 Ops/s, 197.30513 Mbps @ max 6 iterations
+Throughput for core (27): 35032.506 Ops/s, 197.30307 Mbps @ max 6 iterations
+Throughput for core (28): 35031.819 Ops/s, 197.2992 Mbps @ max 6 iterations
+Throughput for core (29): 35031.398 Ops/s, 197.29683 Mbps @ max 6 iterations
+Throughput for core (30): 35031.077 Ops/s, 197.29503 Mbps @ max 6 iterations
+Throughput for core (31): 35030.353 Ops/s, 197.29095 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 560537.59 MOPS, 3156.9477 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       3651.46 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_5608_E_16896_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 35070.38 Ops/s, 197.51638 Mbps @ max 6 iterations
+Throughput for core (17): 35034.049 Ops/s, 197.31177 Mbps @ max 6 iterations
+Throughput for core (18): 35033.398 Ops/s, 197.30809 Mbps @ max 6 iterations
+Throughput for core (19): 35032.682 Ops/s, 197.30406 Mbps @ max 6 iterations
+Throughput for core (20): 35032.01 Ops/s, 197.30028 Mbps @ max 6 iterations
+Throughput for core (21): 35031.256 Ops/s, 197.29604 Mbps @ max 6 iterations
+Throughput for core (22): 35035.88 Ops/s, 197.32208 Mbps @ max 6 iterations
+Throughput for core (23): 35030.653 Ops/s, 197.29264 Mbps @ max 6 iterations
+Throughput for core (24): 35030.295 Ops/s, 197.29062 Mbps @ max 6 iterations
+Throughput for core (25): 35034.206 Ops/s, 197.31265 Mbps @ max 6 iterations
+Throughput for core (26): 35033.67 Ops/s, 197.30963 Mbps @ max 6 iterations
+Throughput for core (27): 35033.093 Ops/s, 197.30638 Mbps @ max 6 iterations
+Throughput for core (28): 35032.314 Ops/s, 197.30199 Mbps @ max 6 iterations
+Throughput for core (29): 35031.723 Ops/s, 197.29866 Mbps @ max 6 iterations
+Throughput for core (30): 35030.967 Ops/s, 197.29441 Mbps @ max 6 iterations
+Throughput for core (31): 35035.551 Ops/s, 197.32023 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 560562.13 MOPS, 3157.0859 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       3100.37 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 89842.988 Ops/s, 252.99785 Mbps @ max 6 iterations
+Throughput for core (17): 89789.302 Ops/s, 252.84667 Mbps @ max 6 iterations
+Throughput for core (18): 89665.744 Ops/s, 252.49873 Mbps @ max 6 iterations
+Throughput for core (19): 89565.697 Ops/s, 252.217 Mbps @ max 6 iterations
+Throughput for core (20): 89563.149 Ops/s, 252.20983 Mbps @ max 6 iterations
+Throughput for core (21): 89563.973 Ops/s, 252.21215 Mbps @ max 6 iterations
+Throughput for core (22): 89795.58 Ops/s, 252.86435 Mbps @ max 6 iterations
+Throughput for core (23): 89566.079 Ops/s, 252.21808 Mbps @ max 6 iterations
+Throughput for core (24): 89700.083 Ops/s, 252.59543 Mbps @ max 6 iterations
+Throughput for core (25): 89567.654 Ops/s, 252.22251 Mbps @ max 6 iterations
+Throughput for core (26): 89580.831 Ops/s, 252.25962 Mbps @ max 6 iterations
+Throughput for core (27): 89580.076 Ops/s, 252.25749 Mbps @ max 6 iterations
+Throughput for core (28): 89605.244 Ops/s, 252.32837 Mbps @ max 6 iterations
+Throughput for core (29): 89577.779 Ops/s, 252.25103 Mbps @ max 6 iterations
+Throughput for core (30): 89584.674 Ops/s, 252.27044 Mbps @ max 6 iterations
+Throughput for core (31): 89575.894 Ops/s, 252.24572 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1434124.7 MOPS, 4038.4953 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1536.83 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_2792_E_8448_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 90044.666 Ops/s, 253.56578 Mbps @ max 6 iterations
+Throughput for core (17): 89749.411 Ops/s, 252.73434 Mbps @ max 6 iterations
+Throughput for core (18): 89849.386 Ops/s, 253.01587 Mbps @ max 6 iterations
+Throughput for core (19): 89713.919 Ops/s, 252.6344 Mbps @ max 6 iterations
+Throughput for core (20): 89705.667 Ops/s, 252.61116 Mbps @ max 6 iterations
+Throughput for core (21): 89699.496 Ops/s, 252.59378 Mbps @ max 6 iterations
+Throughput for core (22): 89741.766 Ops/s, 252.71281 Mbps @ max 6 iterations
+Throughput for core (23): 89722.291 Ops/s, 252.65797 Mbps @ max 6 iterations
+Throughput for core (24): 89721.124 Ops/s, 252.65469 Mbps @ max 6 iterations
+Throughput for core (25): 89939.383 Ops/s, 253.2693 Mbps @ max 6 iterations
+Throughput for core (26): 89728.363 Ops/s, 252.67507 Mbps @ max 6 iterations
+Throughput for core (27): 89719.414 Ops/s, 252.64987 Mbps @ max 6 iterations
+Throughput for core (28): 89709.665 Ops/s, 252.62242 Mbps @ max 6 iterations
+Throughput for core (29): 89700.243 Ops/s, 252.59589 Mbps @ max 6 iterations
+Throughput for core (30): 89701.298 Ops/s, 252.59885 Mbps @ max 6 iterations
+Throughput for core (31): 89731.799 Ops/s, 252.68475 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1436177.9 MOPS, 4044.2769 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1269.58 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_2792_E_3200_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 254010.07 Ops/s, 715.29236 Mbps @ max 6 iterations
+Throughput for core (17): 254020.36 Ops/s, 715.32133 Mbps @ max 6 iterations
+Throughput for core (18): 253948.18 Ops/s, 715.11809 Mbps @ max 6 iterations
+Throughput for core (19): 253941.12 Ops/s, 715.09821 Mbps @ max 6 iterations
+Throughput for core (20): 253937.1 Ops/s, 715.08688 Mbps @ max 6 iterations
+Throughput for core (21): 253931.74 Ops/s, 715.07178 Mbps @ max 6 iterations
+Throughput for core (22): 254036.08 Ops/s, 715.36561 Mbps @ max 6 iterations
+Throughput for core (23): 253959.9 Ops/s, 715.15107 Mbps @ max 6 iterations
+Throughput for core (24): 253945.81 Ops/s, 715.11141 Mbps @ max 6 iterations
+Throughput for core (25): 253939.24 Ops/s, 715.0929 Mbps @ max 6 iterations
+Throughput for core (26): 253944.82 Ops/s, 715.10862 Mbps @ max 6 iterations
+Throughput for core (27): 253933.49 Ops/s, 715.0767 Mbps @ max 6 iterations
+Throughput for core (28): 253931.44 Ops/s, 715.07094 Mbps @ max 6 iterations
+Throughput for core (29): 253927.35 Ops/s, 715.05941 Mbps @ max 6 iterations
+Throughput for core (30): 253953.27 Ops/s, 715.1324 Mbps @ max 6 iterations
+Throughput for core (31): 253940.55 Ops/s, 715.09658 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 4063300.5 MOPS, 11442.254 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       607.22 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_2792_E_3200_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 282237.82 Ops/s, 794.7817 Mbps @ max 6 iterations
+Throughput for core (17): 282305.39 Ops/s, 794.97197 Mbps @ max 6 iterations
+Throughput for core (18): 282201.32 Ops/s, 794.67891 Mbps @ max 6 iterations
+Throughput for core (19): 282179.02 Ops/s, 794.61613 Mbps @ max 6 iterations
+Throughput for core (20): 281011.53 Ops/s, 791.32848 Mbps @ max 6 iterations
+Throughput for core (21): 280996.85 Ops/s, 791.28713 Mbps @ max 6 iterations
+Throughput for core (22): 281011.35 Ops/s, 791.32795 Mbps @ max 6 iterations
+Throughput for core (23): 281124.17 Ops/s, 791.64566 Mbps @ max 6 iterations
+Throughput for core (24): 280998.06 Ops/s, 791.29052 Mbps @ max 6 iterations
+Throughput for core (25): 282181.4 Ops/s, 794.62281 Mbps @ max 6 iterations
+Throughput for core (26): 282249.12 Ops/s, 794.81351 Mbps @ max 6 iterations
+Throughput for core (27): 282282.72 Ops/s, 794.90814 Mbps @ max 6 iterations
+Throughput for core (28): 281604.58 Ops/s, 792.99848 Mbps @ max 6 iterations
+Throughput for core (29): 281646.3 Ops/s, 793.11598 Mbps @ max 6 iterations
+Throughput for core (30): 281179.66 Ops/s, 791.80192 Mbps @ max 6 iterations
+Throughput for core (31): 281174.72 Ops/s, 791.788 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 4506384 MOPS, 12689.977 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       465.573 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 122365.74 Ops/s, 172.29097 Mbps @ max 6 iterations
+Throughput for core (17): 122052.22 Ops/s, 171.84953 Mbps @ max 6 iterations
+Throughput for core (18): 122078.9 Ops/s, 171.88709 Mbps @ max 6 iterations
+Throughput for core (19): 122078.41 Ops/s, 171.88641 Mbps @ max 6 iterations
+Throughput for core (20): 122063.43 Ops/s, 171.86531 Mbps @ max 6 iterations
+Throughput for core (21): 122060.16 Ops/s, 171.86071 Mbps @ max 6 iterations
+Throughput for core (22): 122056.56 Ops/s, 171.85564 Mbps @ max 6 iterations
+Throughput for core (23): 122056.52 Ops/s, 171.85558 Mbps @ max 6 iterations
+Throughput for core (24): 122099.1 Ops/s, 171.91553 Mbps @ max 6 iterations
+Throughput for core (25): 122084.38 Ops/s, 171.8948 Mbps @ max 6 iterations
+Throughput for core (26): 122082.77 Ops/s, 171.89254 Mbps @ max 6 iterations
+Throughput for core (27): 123186.64 Ops/s, 173.44679 Mbps @ max 6 iterations
+Throughput for core (28): 122066.3 Ops/s, 171.86935 Mbps @ max 6 iterations
+Throughput for core (29): 122061.83 Ops/s, 171.86305 Mbps @ max 6 iterations
+Throughput for core (30): 122062.03 Ops/s, 171.86333 Mbps @ max 6 iterations
+Throughput for core (31): 122058.68 Ops/s, 171.85862 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1954513.7 MOPS, 2751.9553 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1068.14 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_1384_E_4224_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 122298.36 Ops/s, 172.19609 Mbps @ max 6 iterations
+Throughput for core (17): 122336.71 Ops/s, 172.25008 Mbps @ max 6 iterations
+Throughput for core (18): 122077.18 Ops/s, 171.88468 Mbps @ max 6 iterations
+Throughput for core (19): 122068.05 Ops/s, 171.87182 Mbps @ max 6 iterations
+Throughput for core (20): 122055.52 Ops/s, 171.85417 Mbps @ max 6 iterations
+Throughput for core (21): 122055.68 Ops/s, 171.8544 Mbps @ max 6 iterations
+Throughput for core (22): 122057.81 Ops/s, 171.8574 Mbps @ max 6 iterations
+Throughput for core (23): 122177.09 Ops/s, 172.02535 Mbps @ max 6 iterations
+Throughput for core (24): 122163.45 Ops/s, 172.00613 Mbps @ max 6 iterations
+Throughput for core (25): 122271.82 Ops/s, 172.15873 Mbps @ max 6 iterations
+Throughput for core (26): 122081.48 Ops/s, 171.89072 Mbps @ max 6 iterations
+Throughput for core (27): 122078.47 Ops/s, 171.88649 Mbps @ max 6 iterations
+Throughput for core (28): 122064.74 Ops/s, 171.86716 Mbps @ max 6 iterations
+Throughput for core (29): 122062.07 Ops/s, 171.8634 Mbps @ max 6 iterations
+Throughput for core (30): 122058.32 Ops/s, 171.85812 Mbps @ max 6 iterations
+Throughput for core (31): 122178.29 Ops/s, 172.02703 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 1954085.1 MOPS, 2751.3518 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       933.359 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_SNR_40.00_LLR_width_8.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 430431.55 Ops/s, 606.04763 Mbps @ max 6 iterations
+Throughput for core (17): 428455.32 Ops/s, 603.26509 Mbps @ max 6 iterations
+Throughput for core (18): 428343.16 Ops/s, 603.10716 Mbps @ max 6 iterations
+Throughput for core (19): 428647.3 Ops/s, 603.5354 Mbps @ max 6 iterations
+Throughput for core (20): 428403.58 Ops/s, 603.19224 Mbps @ max 6 iterations
+Throughput for core (21): 430045.87 Ops/s, 605.50459 Mbps @ max 6 iterations
+Throughput for core (22): 429267.95 Ops/s, 604.40927 Mbps @ max 6 iterations
+Throughput for core (23): 429492.41 Ops/s, 604.72531 Mbps @ max 6 iterations
+Throughput for core (24): 428381.12 Ops/s, 603.16061 Mbps @ max 6 iterations
+Throughput for core (25): 428382.44 Ops/s, 603.16248 Mbps @ max 6 iterations
+Throughput for core (26): 428704.61 Ops/s, 603.61609 Mbps @ max 6 iterations
+Throughput for core (27): 428346.87 Ops/s, 603.11239 Mbps @ max 6 iterations
+Throughput for core (28): 428376.96 Ops/s, 603.15475 Mbps @ max 6 iterations
+Throughput for core (29): 428577.87 Ops/s, 603.43764 Mbps @ max 6 iterations
+Throughput for core (30): 428436.89 Ops/s, 603.23914 Mbps @ max 6 iterations
+Throughput for core (31): 428382.76 Ops/s, 603.16293 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 6860676.6 MOPS, 9659.8327 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       377.984 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD350_K_prime_minus_L_1384_E_1600_BG_1_Q_m_2_SNR_40.00_LLR_width_6.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 441259.03 Ops/s, 621.29272 Mbps @ max 6 iterations
+Throughput for core (17): 439181.88 Ops/s, 618.36809 Mbps @ max 6 iterations
+Throughput for core (18): 439175.4 Ops/s, 618.35896 Mbps @ max 6 iterations
+Throughput for core (19): 440959.01 Ops/s, 620.87029 Mbps @ max 6 iterations
+Throughput for core (20): 439190.38 Ops/s, 618.38006 Mbps @ max 6 iterations
+Throughput for core (21): 439821.57 Ops/s, 619.26878 Mbps @ max 6 iterations
+Throughput for core (22): 439754.03 Ops/s, 619.17368 Mbps @ max 6 iterations
+Throughput for core (23): 440728.96 Ops/s, 620.54638 Mbps @ max 6 iterations
+Throughput for core (24): 440719.17 Ops/s, 620.53258 Mbps @ max 6 iterations
+Throughput for core (25): 440692.08 Ops/s, 620.49446 Mbps @ max 6 iterations
+Throughput for core (26): 439169.58 Ops/s, 618.35077 Mbps @ max 6 iterations
+Throughput for core (27): 439211.09 Ops/s, 618.40921 Mbps @ max 6 iterations
+Throughput for core (28): 441108.27 Ops/s, 621.08045 Mbps @ max 6 iterations
+Throughput for core (29): 440637.64 Ops/s, 620.4178 Mbps @ max 6 iterations
+Throughput for core (30): 440786.57 Ops/s, 620.62749 Mbps @ max 6 iterations
+Throughput for core (31): 440666.52 Ops/s, 620.45847 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 7043061.2 MOPS, 9916.6302 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       322.865 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_616_E_960_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 568020.33 Ops/s, 363.53301 Mbps @ max 6 iterations
+Throughput for core (17): 563354.68 Ops/s, 360.547 Mbps @ max 6 iterations
+Throughput for core (18): 563527.97 Ops/s, 360.6579 Mbps @ max 6 iterations
+Throughput for core (19): 563242.52 Ops/s, 360.47521 Mbps @ max 6 iterations
+Throughput for core (20): 563194.64 Ops/s, 360.44457 Mbps @ max 6 iterations
+Throughput for core (21): 563763.13 Ops/s, 360.8084 Mbps @ max 6 iterations
+Throughput for core (22): 563523.76 Ops/s, 360.65521 Mbps @ max 6 iterations
+Throughput for core (23): 563089.87 Ops/s, 360.37752 Mbps @ max 6 iterations
+Throughput for core (24): 563649.34 Ops/s, 360.73558 Mbps @ max 6 iterations
+Throughput for core (25): 563594.87 Ops/s, 360.70072 Mbps @ max 6 iterations
+Throughput for core (26): 562670.31 Ops/s, 360.109 Mbps @ max 6 iterations
+Throughput for core (27): 563371.97 Ops/s, 360.55806 Mbps @ max 6 iterations
+Throughput for core (28): 563166.85 Ops/s, 360.42679 Mbps @ max 6 iterations
+Throughput for core (29): 563261.91 Ops/s, 360.48762 Mbps @ max 6 iterations
+Throughput for core (30): 563286.05 Ops/s, 360.50307 Mbps @ max 6 iterations
+Throughput for core (31): 562952.81 Ops/s, 360.2898 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 9017671 MOPS, 5771.3094 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       295.506 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_616_E_3200_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 151003.71 Ops/s, 96.642377 Mbps @ max 6 iterations
+Throughput for core (17): 150210.56 Ops/s, 96.134761 Mbps @ max 6 iterations
+Throughput for core (18): 150220.39 Ops/s, 96.141047 Mbps @ max 6 iterations
+Throughput for core (19): 150217.87 Ops/s, 96.139439 Mbps @ max 6 iterations
+Throughput for core (20): 150210.77 Ops/s, 96.134896 Mbps @ max 6 iterations
+Throughput for core (21): 151045.97 Ops/s, 96.669419 Mbps @ max 6 iterations
+Throughput for core (22): 150235.36 Ops/s, 96.150631 Mbps @ max 6 iterations
+Throughput for core (23): 150232.28 Ops/s, 96.148659 Mbps @ max 6 iterations
+Throughput for core (24): 151021.64 Ops/s, 96.653849 Mbps @ max 6 iterations
+Throughput for core (25): 151036.13 Ops/s, 96.663124 Mbps @ max 6 iterations
+Throughput for core (26): 150226.07 Ops/s, 96.144686 Mbps @ max 6 iterations
+Throughput for core (27): 150219.07 Ops/s, 96.140203 Mbps @ max 6 iterations
+Throughput for core (28): 150214.46 Ops/s, 96.137257 Mbps @ max 6 iterations
+Throughput for core (29): 151067.94 Ops/s, 96.683482 Mbps @ max 6 iterations
+Throughput for core (30): 151026.02 Ops/s, 96.656656 Mbps @ max 6 iterations
+Throughput for core (31): 151042.55 Ops/s, 96.667233 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2409230.8 MOPS, 1541.9077 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       871.845 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+QDMA eth_qdma_pci_probe : force exit
+
+===========================================================
+Starting Test Suite : BBdev Throughput Tests
+Test vector file = examples/accl-bbdev-fdx/smoke_test_v/decode/ldpc_dec_LD550_K_prime_minus_L_3816_E_5760_BG_2_Q_m_2_SNR_40.00.data
++ ------------------------------------------------------- +
+== test: throughput
+dev: 89:00.0, nb_queues: 16, burst size: 512, num ops: 1024, num_lcores: 16, op type: RTE_BBDEV_OP_LDPC_DEC, itr mode: PMD mode, GHz: 1.9
+Throughput for core (16): 132217.36 Ops/s, 507.71468 Mbps @ max 6 iterations
+Throughput for core (17): 132216.71 Ops/s, 507.71218 Mbps @ max 6 iterations
+Throughput for core (18): 132235.11 Ops/s, 507.78283 Mbps @ max 6 iterations
+Throughput for core (19): 132175.2 Ops/s, 507.55277 Mbps @ max 6 iterations
+Throughput for core (20): 132207.28 Ops/s, 507.67597 Mbps @ max 6 iterations
+Throughput for core (21): 132227.02 Ops/s, 507.75176 Mbps @ max 6 iterations
+Throughput for core (22): 132194.45 Ops/s, 507.6267 Mbps @ max 6 iterations
+Throughput for core (23): 132173.95 Ops/s, 507.54799 Mbps @ max 6 iterations
+Throughput for core (24): 132192.79 Ops/s, 507.62031 Mbps @ max 6 iterations
+Throughput for core (25): 132191.64 Ops/s, 507.61589 Mbps @ max 6 iterations
+Throughput for core (26): 132189.93 Ops/s, 507.60934 Mbps @ max 6 iterations
+Throughput for core (27): 132188.81 Ops/s, 507.60504 Mbps @ max 6 iterations
+Throughput for core (28): 132176.88 Ops/s, 507.55923 Mbps @ max 6 iterations
+Throughput for core (29): 132176.44 Ops/s, 507.55754 Mbps @ max 6 iterations
+Throughput for core (30): 132176.53 Ops/s, 507.55786 Mbps @ max 6 iterations
+Throughput for core (31): 132181.05 Ops/s, 507.57524 Mbps @ max 6 iterations
+
+Total throughput for 16 cores: 2115121.2 MOPS, 8122.0653 Mbps @ max 6 iterations
+TestCase [ 0] : throughput_tc passed
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +
+ + Test Suite Summary : BBdev Throughput Tests
+ + Tests Total :        1
+ + Tests Skipped :      0
+ + Tests Passed :       1
+ + Tests Failed :       0
+ + Tests Lasted :       1062.05 ms
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ +

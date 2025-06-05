@@ -1,0 +1,94 @@
+{
+  "resultsInfo": [
+    {
+      "run": 1,
+      "statistics": [
+        {
+          "Stress-BBDEV-Throughput": [
+            {
+              "Encode": [
+                {
+                  "metricsName": "encode_queues",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "decode_queues",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "dequeue_threads",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "iter",
+                  "metricsValue": 10000
+                },
+                {
+                  "metricsName": "time_out",
+                  "metricsValue": 10
+                },
+                {
+                  "metricsName": "burst_size",
+                  "metricsValue": 1000
+                },
+                {
+                  "metricsName": "nb_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "Encode Throughput In (Gbps)",
+                  "metricsValue": 12.064057
+                },
+                {
+                  "metricsName": "Encode Throughput Out (Gbps)",
+                  "metricsValue": 36.295283
+                }
+              ],
+              "Decode": [
+                {
+                  "metricsName": "encode_queues",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "decode_queues",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "dequeue_threads",
+                  "metricsValue": 1
+                },
+                {
+                  "metricsName": "iter",
+                  "metricsValue": 10000
+                },
+                {
+                  "metricsName": "time_out",
+                  "metricsValue": 10
+                },
+                {
+                  "metricsName": "burst_size",
+                  "metricsValue": 1000
+                },
+                {
+                  "metricsName": "nb_ops",
+                  "metricsValue": 1024
+                },
+                {
+                  "metricsName": "Decode Throughput In (Gbps)",
+                  "metricsValue": 109.994205
+                },
+                {
+                  "metricsName": "Decode Throughput Out (Gbps)",
+                  "metricsValue": 12.064989
+                }
+              ],
+              "status": "OK"
+            }
+          ],
+          "status": "OK"
+        }
+      ],
+      "summary": "Results for Run 1"
+    }
+  ]
+}
