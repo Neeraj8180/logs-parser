@@ -6,5 +6,8 @@ langchain-community
 langchain-openai
 python-dotenv
 tiktoken
+<<<<<<< HEAD
 groq
+=======
+>>>>>>> 16ae78e4152971e8d690bb488f83c250e3b52f55
 
